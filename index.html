@@ -29,11 +29,11 @@
     <header>
       <!-- Logo Reservia -->
    	  <img src="logo/Reservia.svg" alt="logo reservia">
-      <nav>
+      <nav class="menu">
         <ul>
           <li>Hébergements</li>
           <li>Activités</li>
-          <li></li>S'inscrire></li>
+          <li>S'inscrire</li>
         </ul>
       </nav>
       <p class="slogan">Trouvez votre hébergement pour des vacances de rêve</p>
@@ -42,7 +42,10 @@
 
     <!-- Section 1 : champ de recherche-->
     <section id="recherche">
-      
+      <form method="post" action="ville.php"></form>
+      <label for="Ville"></label>
+        <input type="text" id="Ville" name="Ville" placeholder="Marseille, France"/>
+        <input type="submit" value="Rechercher"/>
 
 
     </section>
@@ -79,7 +82,7 @@
 
     <!-- Footer -->
     <footer>
-    <!-- Footer Section 1 : A propos-->
+      <!-- Footer Section 1 : A propos-->
       <section id="about">
       
 
