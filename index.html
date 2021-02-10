@@ -23,88 +23,93 @@
 
   <body>
     <div id="bloc_page">
+  
+      <!-- Header -->
+      <header>
+        <!-- Logo Reservia -->
+        <img src="logo/Reservia.svg" alt="logo reservia">
+        <nav>
+          <ul class="menu">
+            <li><a href="#hebergements" title="Votre hébergement">Hébergements</a></li>
+            <li><a href="#activites" title="Vos activités">Activités</a></li>
+                  <!-- Penser à créer la page s'inscrire + formulaire -->
+                  <!-- Dupliquer le contenu head + header -->
+            <li><a href="/inscription.html" title="Inscrivez-vous !">S'inscrire</a></li>
+          </ul>
+        </nav>
+        <p class="slogan"><strong>Trouvez votre hébergement pour des vacances de rêve</strong></p>
+        <p>En plein centre ville ou en pleine nature</p><br />
+      </header>
+
+      <!-- Section 1 : champ de recherche-->
+      <section id="recherche">
+
+        <!-- Source icone à préciser ATTENTION-->
+        <img src="/icons/geolocalisation.svg" class="geolocalisation">
+
+        <form method="post" action="ville.php"></form>
+        <label for="Ville"></label>
+          <input type="text" id="Ville" name="Ville" placeholder="Marseille, France" class="ville"/>
+          <input type="submit" value="Rechercher" class="rechercher"/>
+
+
+      </section>
+
+
+
+      <!-- Section 2 : filtres de recherche-->
+      <section id="filtres">
+        
+
+      </section>
+
+
+
+
+      <!-- Section 3 : Hébergements trouvés -->
+      <section id="hebergements">
+        
+
+      </section>
+      
+
+      <!-- Section 4 : les plus populaires -->
+      <aside id="populaires">
+        
+
+      </aside>
+
+      <!-- Section 5 : Activités -->
+      <section id="activites">
+        
+
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <!-- Footer Section 1 : A propos-->
+        <section id="about">
+        
+
+        </section>  	
+
+
+        <!-- Footer Section 2 : Nos hébergements-->
+        <section id="quality">
+        
+
+
+        </section>
+
+
+        <!-- Footer Section 3 : Assistance-->
+        <section id="contact">
+        
+
+
+        </section>
+      </footer>
     </div>
-
-    <!-- Header -->
-    <header>
-      <!-- Logo Reservia -->
-   	  <img src="logo/Reservia.svg" alt="logo reservia">
-      <nav class="menu">
-        <ul>
-          <li>Hébergements</li>
-          <li>Activités</li>
-          <li>S'inscrire</li>
-        </ul>
-      </nav>
-      <p class="slogan">Trouvez votre hébergement pour des vacances de rêve</p>
-      <p>En plein centre ville ou en pleine nature</p>
-    </header>
-
-    <!-- Section 1 : champ de recherche-->
-    <section id="recherche">
-      <form method="post" action="ville.php"></form>
-      <label for="Ville"></label>
-        <input type="text" id="Ville" name="Ville" placeholder="Marseille, France"/>
-        <input type="submit" value="Rechercher"/>
-
-
-    </section>
-
-
-
-    <!-- Section 2 : filtres de recherche-->
-    <section id="filtres">
-      
-
-    </section>
-
-
-
-
-    <!-- Section 3 : Hébergements trouvés -->
-    <section id="hebergements">
-      
-
-    </section>
-    
-
-    <!-- Section 4 : les plus populaires -->
-    <aside id="populaires">
-      
-
-    </aside>
-
-    <!-- Section 5 : Activités -->
-    <section id="activites">
-      
-
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <!-- Footer Section 1 : A propos-->
-      <section id="about">
-      
-
-      </section>  	
-
-
-      <!-- Footer Section 2 : Nos hébergements-->
-      <section id="quality">
-      
-
-
-      </section>
-
-
-      <!-- Footer Section 3 : Assistance-->
-      <section id="contact">
-      
-
-
-      </section>
-    </footer>
-
-
   </body>
+
 </html>

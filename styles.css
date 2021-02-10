@@ -1,17 +1,109 @@
+@font-face
+{
+    font-family: "Raleway";
+    src: url(/fonts/raleway/Raleway-Black.ttf);
+    src: url(/fonts/raleway/Raleway-BlackItalic.ttf);
+    src: url(/fonts/raleway/Raleway-Bold.ttf);
+    src: url(/fonts/raleway/Raleway-ExtraLight.ttf);
+    src: url(/fonts/raleway/Raleway-BoldItalic.ttf);
+    src: url(/fonts/raleway/Raleway-ExtraBold.ttf);
+    src: url(/fonts/raleway/Raleway-ExtraLightItalic.ttf);
+    src: url(/fonts/raleway/Raleway-Italic.ttf);
+    src: url(/fonts/raleway/Raleway-Medium.ttf);
+    src: url(/fonts/raleway/Raleway-ExtraBoldItalic.ttf);
+    src: url(/fonts/raleway/Raleway-Light.ttf);
+    src: url(/fonts/raleway/Raleway-LightItalic.ttf);
+    src: url(/fonts/raleway/Raleway-MediumItalic.ttf);
+    src: url(/fonts/raleway/Raleway-Regular.ttf);
+    src: url(/fonts/raleway/Raleway-SemiBold.ttf);
+    src: url(/fonts/raleway/Raleway-SemiBoldItalic.ttf);
+    src: url(/fonts/raleway/Raleway-Thin.ttf);
+    src: url(/fonts/raleway/Raleway-ThinItalic.ttf);
+}
+
+#bloc_page
+{
+width: 1360px;
+margin: 5px
+}
+
+header a
+{
+    font-size: 0.7em;
+    font-style: normal;
+    text-decoration: none;
+    color: #0065fc;
+}
+
+.slogan
+{
+    font-size: 1em;
+}
+
+header p
+{
+    font-size: 0.7em;
+}
+
+nav
+{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 100px;
+}
+
 nav ul
 {
     list-style: none;
-    display: flex;
-    position: absolute;
-    top: 2%;
-    right: 2%;
-    width: 420px
+
 }
 
-nav ul li
+.menu
 {
-    display: inline-block;
-    width: 33%;
-    margin: auto;
+    display: flex;
+    width: 420px;
+    justify-content: space-around;
     text-align: center;
+}
+
+nav a:hover
+{
+    border-top: 2px solid #0065fc;
+    padding: 15px;
+    text-align: center;
+}
+
+#recherche
+{
+    position: absolute;
+    display: flex;
+    height: 30px;
+    width: 25%;
+}
+
+#recherche input
+{
+    position: relative;
+    font-size: 0.8em;
+}
+
+.geolocalisation
+{
+    background-color: #f2f2f2;
+}
+
+.ville
+{
+    width: 100%;
+    padding-left: 4px;
+    border: none;
+}
+
+.rechercher
+{
+    background-color: #0065fc;
+    width: 40%;
+    color: #ffffff;
+    position: relative;
 }
