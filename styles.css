@@ -38,6 +38,7 @@ header a
 .slogan
 {
     font-size: 1em;
+    overflow-wrap: break-word;
 }
 
 header p
@@ -74,7 +75,7 @@ nav a:hover
     text-align: center;
 }
 
-#recherche
+#searchbar
 {
     position: absolute;
     display: flex;
@@ -82,28 +83,45 @@ nav a:hover
     width: 25%;
 }
 
-#recherche input
+#bloc_position
 {
-    position: relative;
-    font-size: 0.8em;
+    display: flex;
+    background-color: #f2f2f2;
+    border-top-left-radius: 6px 10px;
+    border-bottom-left-radius: 6px 10px;
+    justify-content: center;
+    width: 30px;
+    min-width: 30px;
+    height: 100%;
 }
 
 .geolocalisation
 {
-    background-color: #f2f2f2;
+    max-width: 33%;
+    display: block;
 }
 
 .ville
 {
-    width: 100%;
-    padding-left: 4px;
-    border: none;
+    display: block;
+    position: relative;
+    padding-left: 10px;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    border-left: none;
+    border-right: none;
+    font-size: 0.8em;
 }
 
 .rechercher
 {
+    display: block;
     background-color: #0065fc;
     width: 40%;
+    font-size: 0.8em;
     color: #ffffff;
-    position: relative;
+    border-top-right-radius: 6px 10px;
+    border-bottom-right-radius: 6px 10px;
+    border: none;
+    min-width: 100px;
 }
