@@ -131,51 +131,69 @@ nav a:hover
     position: absolute;
     display: flex;
     width: 75%;
-    height: 40px;
-    justify-content: space-around;
-}
-
-#filtres ul
-{
-    list-style: none;
-    display: flex;
-    height: 100%;
-    justify-content: space-around;
-    text-align: center;
+    height: 30px;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: row;
 }
 
 #filtres p
 {
-    position: absolute;
+    align-items: center;
     margin-left: 0px;
     font-size: 0.8em;
 }
 
-.filter
+.liste_filtres
 {
-    display: block;
-    border-left: none;
-    background-color: none;
-}
-
-#filtres div
-{
+    list-style: none;
+    height: 100%;
+    width: 100%;
     display: flex;
-    background-color: #f2f2f2;
-    width: 40px;
-    height: 40px;
-    justify-content: center;
-    border-radius: 20px 20px;
-    justify-content: center;
-    text-align: center;
-
+    justify-content: space-around;
+    align-items: center;
 }
 
-#filtres *img
+.liste_filtres div
+{
+    display: inline-block;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.icon
+{
+    background-color: #f2f2f2;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon img
 {
     max-width: 40%;
-    color: #0065fc;
-    display: block;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+}
+
+.filter
+{
+    display: inline-block;
+    border-left: none;
+    background-color: #ffffff;
+    font-weight: bold;
+    font-size: 0.8em;
+    height: 100%;
+    border-top-right-radius: 15px 15px;
+    border-bottom-right-radius: 15px 15px;
+    align-items: center;
 }
 
 
