@@ -27,7 +27,7 @@ width: 1360px;
 margin: 5px
 }
 
-header a
+header a /* 3 éléments du menu de navigation*/
 {
     font-size: 0.7em;
     font-style: normal;
@@ -46,36 +46,30 @@ header p
     font-size: 0.7em;
 }
 
-nav
+nav /* Menu de navigation*/
 {
     position: absolute;
     right: 10px;
     top: 10px;
-    height: 100px;
+    height: 120px;
 }
 
 nav ul
 {
     list-style: none;
-
-}
-
-.menu
-{
     display: flex;
     width: 420px;
     justify-content: space-around;
-    text-align: center;
+    flex-wrap: nowrap;
 }
 
 nav a:hover
 {
     border-top: 2px solid #0065fc;
-    padding: 15px;
-    text-align: center;
+    padding-top: 15px;
 }
 
-#searchbar
+#searchbar /* Conteneur icone + champ recherche + bouton rechercher*/
 {
     position: absolute;
     display: flex;
@@ -83,7 +77,7 @@ nav a:hover
     width: 25%;
 }
 
-#bloc_position
+#bloc_position /* Conteneur icône géolocalisation*/
 {
     display: flex;
     background-color: #f2f2f2;
@@ -95,13 +89,13 @@ nav a:hover
     height: 100%;
 }
 
-.geolocalisation
+.geolocalisation /* icône géolocalisation*/
 {
     max-width: 33%;
     display: block;
 }
 
-.ville
+.ville /* Champ de recherche Ville*/
 {
     display: block;
     position: relative;
@@ -113,7 +107,7 @@ nav a:hover
     font-size: 0.8em;
 }
 
-.rechercher
+.rechercher /* Bouton Rechercher*/
 {
     display: block;
     background-color: #0065fc;
@@ -126,7 +120,7 @@ nav a:hover
     min-width: 100px;
 }
 
-#filtres
+#filtres /* Conteneur des 4 filtres*/
 {
     position: absolute;
     display: flex;
@@ -144,56 +138,94 @@ nav a:hover
     font-size: 0.8em;
 }
 
-.liste_filtres
+.liste_filtres /* Icones de filtres*/
 {
     list-style: none;
-    height: 100%;
+    height: 30px;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.liste_filtres div
+.liste_filtres li
 {
-    display: inline-block;
-    vertical-align: middle;
-    align-items: center;
+    /* Permet d'aligner l'icône et le texte du filtre */
+    display: inline-flex;
 }
 
-.icon
+.icon /* Conteneur des icônes de filtres*/
 {
+    position: relative;
+    left: 10px;
     background-color: #f2f2f2;
-    display: block;
     width: 30px;
     height: 30px;
     border-radius: 20px 20px;
-    text-align: center;
     align-items: center;
-    justify-content: center;
+    border: 1px solid #f2f2f2;
+    display: flex;
 }
 
+/* Icones de filtres*/
 .icon img
 {
-    max-width: 40%;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
+    max-width: 45%;
     margin: auto;
     padding: auto;
+    /* remplissage des icones svg avec filtre (CSS filter generator) */
+    filter: invert(30%) sepia(54%) saturate(5456%) hue-rotate(208deg) brightness(96%) contrast(109%);
 }
 
-.filter
+.filter /* Boutons de filtres*/
 {
-    display: inline-block;
     border-left: none;
     background-color: #ffffff;
     font-weight: bold;
     font-size: 0.8em;
-    height: 100%;
+    height: 30px;
     border-top-right-radius: 15px 15px;
     border-bottom-right-radius: 15px 15px;
     align-items: center;
+    padding: auto;
+    padding-left: 12px;
+    width: 110%;
+}
+
+#result
+{
+    width: 500px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#bloc_info /* Conteneur icône Info */
+{
+    display: flex;
+    background-color: #ffffff;
+    border: 1px solid #f2f2f2;
+    border-radius: 8px 8px;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
 }
 
 
+
+.info /* icône Info*/
+{
+    width: 10px;
+    height:10px;
+    display: inline-block;
+    /* remplissage de l'icone svg avec filtre (CSS filter generator) */
+    filter: invert(30%) sepia(54%) saturate(5456%) hue-rotate(208deg) brightness(96%) contrast(109%);
+}
+
+#result p
+{
+    font-size: 0.7em;
+    align-items: center;
+    margin-left: 10px;
+}
