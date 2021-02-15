@@ -24,7 +24,8 @@
 #bloc_page
 {
 width: 1360px;
-margin: 5px
+margin: auto;
+padding: auto;
 }
 
 header a /* 3 éléments du menu de navigation*/
@@ -61,6 +62,8 @@ nav ul
     width: 420px;
     justify-content: space-around;
     flex-wrap: nowrap;
+    margin-right: 20px;
+    margin-top: 20px;
 }
 
 nav a:hover
@@ -186,6 +189,7 @@ nav a:hover
     height: 30px;
     border-top-right-radius: 15px 15px;
     border-bottom-right-radius: 15px 15px;
+    border: 2px solid #f2f2f2;
     align-items: center;
     padding: auto;
     padding-left: 12px;
@@ -228,4 +232,46 @@ nav a:hover
     font-size: 0.7em;
     align-items: center;
     margin-left: 10px;
+}
+
+#hebergements
+{
+    display: flex;
+    background-color: #f2f2f2;
+    width: 70%;
+    height: 600px;
+    border-radius: 10px 10px;
+    justify-content: space-around;
+}
+
+#hebergements ul
+{
+    list-style-type: none;
+    align-content: space-around;
+    align-items: center;
+    width: 240px;
+    height: 120px;
+}
+
+h1
+{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.hotel
+{
+    display: block;
+    width: 240px;
+    height: 120px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    align-content: space-around;
+    align-items: center;
+}
+
+.hotel div
+{
+    display: inline-block;
+    max-width: 98%;
 }
