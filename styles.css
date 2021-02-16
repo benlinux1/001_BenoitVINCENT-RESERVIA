@@ -236,42 +236,89 @@ nav a:hover
 
 #hebergements
 {
-    display: flex;
     background-color: #f2f2f2;
-    width: 70%;
-    height: 600px;
+    width: 880px;
+    height: 540px;
     border-radius: 10px 10px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
-}
-
-#hebergements ul
-{
-    list-style-type: none;
-    align-content: space-around;
-    align-items: center;
-    width: 240px;
-    height: 120px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 h1
 {
-    font-size: 1em;
+    width: 100%;
+    padding-left: 30px;
+    padding-top: 15px;
+    font-size: 0.9em;
     font-weight: bold;
 }
 
-.hotel
+.vignette
 {
-    display: block;
     width: 240px;
-    height: 120px;
+    height: 190px;
     background-color: #ffffff;
     border-radius: 10px;
-    align-content: space-around;
-    align-items: center;
+    display: inline-block;
+    align-items: flex-start;
 }
 
-.hotel div
+.hotel img
 {
-    display: inline-block;
-    max-width: 98%;
+    width: 98%;
+    max-height: 120px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    border-radius: 10px 10px;
+}
+
+.nom_hotel
+{
+    margin-top: 5px;
+    padding-left: 10px;
+    font-size: 0.7em;
+    font-weight: bold;
+    height: 10px;
+}
+
+.prix
+{
+    padding-left: 10px;
+    font-weight: normal;
+    font-size: 0.7em;
+    height: 10px;
+}
+
+.rating
+{
+    display: inline-flex;
+    justify-content: flex-start;
+    padding-left: 8px;
+    width: 15px;
+}
+
+.etoile_bleu
+{
+    padding-bottom: 20px;
+    /* remplissage de l'icone svg avec filtre (CSS filter generator) */
+    filter: invert(30%) sepia(54%) saturate(5456%) hue-rotate(208deg) brightness(96%) contrast(109%);
+}
+
+.etoile_vide
+{
+    padding-bottom: 20px;
+    filter: invert(100%) sepia(81%) saturate(954%) hue-rotate(203deg) brightness(110%) contrast(30%);
+}
+
+.plus
+{
+    width: 100%;
+    font-size: 0.7em;
+    font-weight: bold;
+    padding-left: 15px;
 }
