@@ -23,9 +23,9 @@
 
 #bloc_page
 {
-width: 1360px;
-margin: auto;
-padding: auto;
+    width: 1360px;
+    margin: auto;
+    padding: auto;
 }
 
 header a /* 3 éléments du menu de navigation*/
@@ -39,8 +39,9 @@ header a /* 3 éléments du menu de navigation*/
 .slogan
 {
     font-size: 1em;
-    overflow-wrap: break-word;
     flex-wrap: wrap;
+    width: 300px;
+    min-width: 50%;
 }
 
 header p
@@ -82,7 +83,6 @@ nav a:hover
 
 #searchbar /* Conteneur icone + champ recherche + bouton rechercher*/
 {
-    position: absolute;
     display: flex;
     height: 30px;
     width: 25%;
@@ -97,7 +97,6 @@ nav a:hover
     justify-content: center;
     width: 30px;
     min-width: 30px;
-    height: 100%;
 }
 
 .geolocalisation /* icône géolocalisation*/
@@ -109,7 +108,6 @@ nav a:hover
 .ville /* Champ de recherche Ville*/
 {
     display: block;
-    position: relative;
     padding-left: 10px;
     border-top: 1px solid #f2f2f2;
     border-bottom: 1px solid #f2f2f2;
@@ -133,12 +131,14 @@ nav a:hover
 
 #filtres /* Conteneur des 4 filtres*/
 {
-    position: absolute;
     display: flex;
-    width: 75%;
+    width: 880px;
+    height: 30px;
+    max-width: 70%;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 5px;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 #filtres p
@@ -152,7 +152,7 @@ nav a:hover
 {
     list-style: none;
     height: 30px;
-    width: 100%;
+    width: 880px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -210,8 +210,8 @@ nav a:hover
     display: flex;
     align-items: center;
     align-content: space-around;
-    margin-top: 15px;
     flex-wrap: wrap;
+    margin-top: 2px;
 }
 
 .bloc_info /* Conteneur icône Info */
@@ -242,8 +242,8 @@ nav a:hover
 
 #section1
 {
-    justify-content: space-between;
-    flex-flow: row;
+    justify-content: flex-start;
+    display: flex;
 }
 
 #hebergements /* Section Hébergements*/
@@ -253,15 +253,15 @@ nav a:hover
     width: 800px;
     border-radius: 10px 10px;
     flex-wrap: wrap;
-    display: none;
+    display: inline-flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-content: space-around;
+    justify-content: space-around;
+    align-content: flex-start;
     padding-left: 20px;
     padding-right: 20px;
-    position: absolute;
     align-items: center;
     vertical-align: top;
+    position: inherit;
 }
 
 h1 /* Hébergements à Marseille*/
@@ -288,11 +288,11 @@ h1 /* Hébergements à Marseille*/
 
 .vignette img 
 {
-    width: 98%;
+    width: 234px;
     max-height: 120px;
-    padding-left: 2px;
-    padding-right: 2px;
-    padding-top: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 3px;
     border-radius: 10px 10px;
 }
 
@@ -348,32 +348,50 @@ h1 /* Hébergements à Marseille*/
     height: 500px;
     background-color: #f2f2f2;
     align-content: space-around;
-    justify-content: space-around;
+    justify-content: flex-start;
     display: inline-flex;
     vertical-align: top;
     border-radius: 10px 10px;
+    margin-left: 30px;
+    flex-flow: column;
+}
+
+#populaires h2 /* Les plus populaires*/
+{
+    width: 100%;
+    height: 10px;
+    padding-top: 15px;
+    padding: auto;
+    margin-left: 15px;
+    font-size: 0.9em;
+    font-weight: bold;
 }
 
 .vignette_pop
 {
     background-color: #ffffff;
     width: 280px;
-    height: 100px;
+    height: 102px;
     flex-flow: row;
     display: flex;
     align-content: space-around;
-    margin-top: 10px;
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 10px 10px;
+    margin: 15px;
 }
 
 
-.pop1
+.pop
 {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    margin-left: 4px;
-    height: 92px;
-    max-width: 120px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 3px;
+    height: 96px;
+    width: 96px;
+    max-height: 96%;
     border-top-left-radius: 10px 10px;
     border-bottom-left-radius: 10px 10px;
     display: inline-block;
