@@ -40,11 +40,14 @@ header a /* 3 éléments du menu de navigation*/
 {
     font-size: 1em;
     overflow-wrap: break-word;
+    flex-wrap: wrap;
 }
 
 header p
 {
     font-size: 0.7em;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
 }
 
 nav /* Menu de navigation*/
@@ -59,11 +62,16 @@ nav ul
 {
     list-style: none;
     display: flex;
-    width: 420px;
+    width: 30%;
     justify-content: space-around;
     flex-wrap: nowrap;
-    margin-right: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+nav li
+{
+    padding-left: 30px;
 }
 
 nav a:hover
@@ -128,7 +136,6 @@ nav a:hover
     position: absolute;
     display: flex;
     width: 75%;
-    height: 30px;
     align-items: center;
     margin-top: 20px;
     flex-direction: row;
@@ -148,7 +155,7 @@ nav a:hover
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
 .liste_filtres li
@@ -196,33 +203,33 @@ nav a:hover
     width: 110%;
 }
 
-#result
+#result /* Conteneur "Plus de 500 logements trouvés" */
 {
-    width: 500px;
-    height: 30px;
+    background-color: lawngreen;
+    width: 30%;
     display: flex;
     align-items: center;
+    align-content: space-around;
+    margin-top: 15px;
+    flex-wrap: wrap;
 }
 
-#bloc_info /* Conteneur icône Info */
+.bloc_info /* Conteneur icône Info */
 {
-    display: flex;
+    display: inline-flex;
     background-color: #ffffff;
     border: 1px solid #f2f2f2;
     border-radius: 8px 8px;
-    justify-content: center;
-    align-items: center;
     width: 16px;
     height: 16px;
+    margin-left: 5px;
 }
-
-
 
 .info /* icône Info*/
 {
     width: 10px;
     height:10px;
-    display: inline-block;
+    margin: auto;
     /* remplissage de l'icone svg avec filtre (CSS filter generator) */
     filter: invert(30%) sepia(54%) saturate(5456%) hue-rotate(208deg) brightness(96%) contrast(109%);
 }
@@ -230,44 +237,56 @@ nav a:hover
 #result p
 {
     font-size: 0.7em;
-    align-items: center;
     margin-left: 10px;
 }
 
-#hebergements
+#section1
 {
-    background-color: #f2f2f2;
-    width: 880px;
-    height: 540px;
-    border-radius: 10px 10px;
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-left: 10px;
-    padding-right: 10px;
+    justify-content: space-between;
+    flex-flow: row;
 }
 
-h1
+#hebergements /* Section Hébergements*/
+{
+    background-color: #f2f2f2;
+    max-width: 60%;
+    width: 800px;
+    border-radius: 10px 10px;
+    flex-wrap: wrap;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-around;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    align-items: center;
+    vertical-align: top;
+}
+
+h1 /* Hébergements à Marseille*/
 {
     width: 100%;
-    padding-left: 30px;
-    padding-top: 15px;
+    height: 10px;
+    padding-top: 10px;
+    margin-left: 15px;
     font-size: 0.9em;
     font-weight: bold;
 }
 
-.vignette
+.vignette /* Vignette Hôtel*/
 {
     width: 240px;
-    height: 190px;
+    height: 180px;
     background-color: #ffffff;
     border-radius: 10px;
-    display: inline-block;
-    align-items: flex-start;
+    padding: auto;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.hotel img
+.vignette img 
 {
     width: 98%;
     max-height: 120px;
@@ -279,11 +298,11 @@ h1
 
 .nom_hotel
 {
-    margin-top: 5px;
+    margin-top: 2px;
     padding-left: 10px;
     font-size: 0.7em;
     font-weight: bold;
-    height: 10px;
+    height: 6px;
 }
 
 .prix
@@ -291,27 +310,26 @@ h1
     padding-left: 10px;
     font-weight: normal;
     font-size: 0.7em;
-    height: 10px;
+    height: 6px;
 }
 
 .rating
 {
     display: inline-flex;
-    justify-content: flex-start;
     padding-left: 8px;
-    width: 15px;
+    max-width: 15px;
 }
 
 .etoile_bleu
 {
-    padding-bottom: 20px;
+    padding-bottom: 25px;
     /* remplissage de l'icone svg avec filtre (CSS filter generator) */
     filter: invert(30%) sepia(54%) saturate(5456%) hue-rotate(208deg) brightness(96%) contrast(109%);
 }
 
 .etoile_vide
 {
-    padding-bottom: 20px;
+    padding-bottom: 25px;
     filter: invert(100%) sepia(81%) saturate(954%) hue-rotate(203deg) brightness(110%) contrast(30%);
 }
 
@@ -320,5 +338,63 @@ h1
     width: 100%;
     font-size: 0.7em;
     font-weight: bold;
-    padding-left: 15px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+#populaires
+{
+    width: 300px;
+    height: 500px;
+    background-color: #f2f2f2;
+    align-content: space-around;
+    justify-content: space-around;
+    display: inline-flex;
+    vertical-align: top;
+    border-radius: 10px 10px;
+}
+
+.vignette_pop
+{
+    background-color: #ffffff;
+    width: 280px;
+    height: 100px;
+    flex-flow: row;
+    display: flex;
+    align-content: space-around;
+    margin-top: 10px;
+    border-radius: 10px 10px;
+}
+
+
+.pop1
+{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    height: 92px;
+    max-width: 120px;
+    border-top-left-radius: 10px 10px;
+    border-bottom-left-radius: 10px 10px;
+    display: inline-block;
+}
+
+.contenu_vignette_populaire
+{
+    width: 200px;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.contenu_vignette_populaire p
+{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.contenu_vignette_populaire .rating
+{
+    display: flex;
+    flex-flow: row;
+    padding-top: 10px;
 }
