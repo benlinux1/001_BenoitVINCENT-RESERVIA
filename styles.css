@@ -350,7 +350,7 @@ h1 /* Hébergements à Marseille*/
     align-content: space-around;
     justify-content: flex-start;
     display: inline-flex;
-    vertical-align: top;
+    vertical-align: middle;
     border-radius: 10px 10px;
     margin-left: 30px;
     flex-flow: column;
@@ -380,9 +380,7 @@ h1 /* Hébergements à Marseille*/
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px 10px;
-    margin: 15px;
 }
-
 
 .pop
 {
@@ -415,4 +413,30 @@ h1 /* Hébergements à Marseille*/
     display: flex;
     flex-flow: row;
     padding-top: 10px;
+}
+
+#activites
+{
+    width: 1330px;
+    height: 300px;
+    display: flex;
+    background-color: lightcoral;
+    margin-top: 20px;
+    border-radius: 10px 10px;
+}
+
+.vieux_port
+{
+    width: 22%;
+    height: 98%;
+    border-radius: 10px 10px;
+    margin-top: 0px;
+}
+
+.vieux_port img
+{
+    width: 98%;
+    height: 90%;
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
 }
