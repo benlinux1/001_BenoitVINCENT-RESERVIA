@@ -249,8 +249,7 @@ nav a:hover
 #hebergements /* Section Hébergements*/
 {
     background-color: #f2f2f2;
-    max-width: 60%;
-    width: 800px;
+    width: 60%;
     border-radius: 10px 10px;
     flex-wrap: wrap;
     display: inline-flex;
@@ -261,7 +260,6 @@ nav a:hover
     padding-right: 20px;
     align-items: center;
     vertical-align: top;
-    position: inherit;
 }
 
 h1 /* Hébergements à Marseille*/
@@ -344,7 +342,7 @@ h1 /* Hébergements à Marseille*/
 
 #populaires
 {
-    width: 300px;
+    width: 25%;
     height: 500px;
     background-color: #f2f2f2;
     align-content: space-around;
@@ -415,28 +413,97 @@ h1 /* Hébergements à Marseille*/
     padding-top: 10px;
 }
 
-#activites
+.activites
 {
-    width: 1330px;
-    height: 300px;
     display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    width: 1360px;
+    height: 320px;
+    justify-content: space-between;
     background-color: lightcoral;
-    margin-top: 20px;
     border-radius: 10px 10px;
+}
+
+figure
+{
+    width: 250px;
+    background-color: #ffffff;
+    border-radius: 10px 10px;
+}
+
+figure img
+{
+    width: 250px;
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+}
+
+figcaption
+{
+    font-size: 0.7em;
+    font-weight: bold;
+    margin-left: 15px;
+    height: 30px;
+    padding-top: 3px;
 }
 
 .vieux_port
 {
-    width: 22%;
-    height: 98%;
     border-radius: 10px 10px;
     margin-top: 0px;
+    margin-left: 0px;
+    background-color: #ffffff;
+    height: 300px;
+
 }
 
 .vieux_port img
 {
-    width: 98%;
-    height: 90%;
+    height: 270px;
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+}
+
+.fort_pomegues
+{
+    height: 160px;
+    border-radius: 10px 10px;
+    background-color: #ffffff;
+    margin-top: 0px;
+}
+
+.fort_pomegues img
+{
+    max-height: 130px;
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+}
+
+.iles_frioul
+{
+    height: 110px;
+    background-color: #ffffff;
+    border-radius: 10px 10px;
+}
+
+.iles_frioul img
+{
+    max-height: 80px;
+    margin-top: 0px;
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+}
+
+.calanques
+{
+    height: 300px;
+    margin-top: 0px;
+}
+
+.calanques img
+{
+    height: 270px;
     border-top-left-radius: 10px 10px;
     border-top-right-radius: 10px 10px;
 }
