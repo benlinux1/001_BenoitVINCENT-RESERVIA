@@ -344,8 +344,8 @@ h1 /* Hébergements à Marseille*/
     flex-flow: column;
     justify-content: flex-start;
     margin-left: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     min-width: 260px;
 }
 
@@ -414,24 +414,34 @@ h1 /* Hébergements à Marseille*/
 .activites
 {
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
     flex-wrap: wrap;
-    height: 320px;
-    justify-content: space-between;
+    justify-content: space-around;
+    min-height: 340px;
     border-radius: 10px 10px;
-    background-color: aqua;
+    margin-left: 0px;
+    margin-top: 20px;
+    min-width: 350px;
+    width: 95%;
 }
 
 figure
 {
     width: 250px;
+    min-width: 250px;
     background-color: #ffffff;
     border-radius: 10px 10px;
+    display: inline-block;
+    justify-content: flex-start;
+    margin-left: 0px;
+    flex-wrap: wrap;
+    box-shadow: 2px 4px #dfdbdb;
 }
 
 figure img
 {
     width: 250px;
+    min-width: 250px;
     border-top-left-radius: 10px 10px;
     border-top-right-radius: 10px 10px;
 }
@@ -443,87 +453,81 @@ figcaption
     margin-left: 15px;
     height: 30px;
     padding-top: 3px;
+    min-width: 250px;
 }
 
 .vieux_port
 {
-    border-radius: 10px 10px;
-    background-color: #ffffff;
-    height: 300px;
-
+    height: 92%;
 }
 
 .vieux_port img
 {
     height: 270px;
-    border-top-left-radius: 10px 10px;
-    border-top-right-radius: 10px 10px;
 }
 
 .fort_pomegues
 {
     height: 160px;
-    border-radius: 10px 10px;
-    background-color: #ffffff;
 }
 
 .fort_pomegues img
 {
     max-height: 130px;
-    border-top-left-radius: 10px 10px;
-    border-top-right-radius: 10px 10px;
 }
 
 .iles_frioul
 {
     height: 110px;
-    background-color: #ffffff;
-    border-radius: 10px 10px;
 }
 
 .iles_frioul img
 {
     max-height: 80px;
-    border-top-left-radius: 10px 10px;
-    border-top-right-radius: 10px 10px;
 }
 
 .calanques
 {
-    height: 300px;
+    height: 92%;
 }
 
 .calanques img
 {
     height: 270px;
-    border-top-left-radius: 10px 10px;
-    border-top-right-radius: 10px 10px;
 }
 
 .notre_dame
 {
     height: 110px;
-    background-color: #ffffff;
-    border-radius: 10px 10px;
 }
 
 .notre_dame img
 {
     max-height: 80px;
-    border-top-left-radius: 10px 10px;
-    border-top-right-radius: 10px 10px;
 }
 
 .parc_longchamp
 {
     height: 160px;
-    border-radius: 10px 10px;
-    background-color: #ffffff;
 }
 
 .parc_longchamp img
 {
     max-height: 130px;
-    border-top-left-radius: 10px 10px;
-    border-top-right-radius: 10px 10px;
+}
+
+.groupe1
+{
+    height: 400px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+}
+
+.groupe2
+{
+    height: 400px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-flow: column;
 }
