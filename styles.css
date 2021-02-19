@@ -417,7 +417,7 @@ h1 /* Hébergements à Marseille*/
     flex-flow: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    min-height: 340px;
+    min-height: 300px;
     border-radius: 10px 10px;
     margin-left: 0px;
     margin-top: 20px;
@@ -531,3 +531,27 @@ figcaption
     flex-wrap: wrap;
     flex-flow: column;
 }
+
+footer
+{
+    display:flex;
+    justify-content: space-around;
+    text-align: justify;
+    margin-top: 20px;
+    height: 200px;
+    background-color: #f2f2f2;
+}
+
+footer ul
+{
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+footer li
+{
+    font-weight: normal;
+    padding-top: 10px;
+}
+
