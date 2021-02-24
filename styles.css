@@ -21,27 +21,33 @@
     src: url(fonts/raleway/Raleway-ThinItalic.ttf);
 }
 
+#bloc_page
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 header a /* 3 éléments du menu de navigation*/
 {
     font-size: 0.7em;
     font-style: normal;
     text-decoration: none;
     color: #0065fc;
+    flex-wrap: wrap;
 }
 
 .slogan
 {
     font-size: 1em;
     flex-wrap: wrap;
-    width: 300px;
-    min-width: 50%;
+    min-width: 240px;
 }
 
 header p
 {
     font-size: 0.7em;
     flex-wrap: wrap;
-    overflow-wrap: break-word;
+    min-width: 240px;
 }
 
 nav /* Menu de navigation*/
@@ -100,13 +106,14 @@ nav a:hover
 
 .ville /* Champ de recherche Ville*/
 {
-    display: block;
+    display: flex;
     padding-left: 10px;
     border-top: 1px solid #f2f2f2;
     border-bottom: 1px solid #f2f2f2;
     border-left: none;
     border-right: none;
     font-size: 0.8em;
+    min-width: 180px;
 }
 
 .rechercher /* Bouton Rechercher*/
@@ -122,10 +129,43 @@ nav a:hover
     min-width: 100px;
 }
 
-.rechercher:hover
+@media all and (orientation: portrait)
 {
-    background-color: #deebff;
-    color: black;
+    .rechercher
+    {
+        font-size: 0px;
+        background-image: url(icons/search-solid.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 10px;
+        display: inline-flex;
+        flex-wrap: wrap;
+        width: 20px;
+    }
+
+    .menu
+    {
+        display: inline-flex;
+        flex-wrap: wrap;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .rechercher
+    {
+        font-size: 0px;
+        background-image: url(icons/search-solid.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 20px;
+        initial-value: none;
+    }
+
 }
 
 #filtres /* Conteneur des 4 filtres*/
@@ -154,6 +194,8 @@ nav a:hover
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .liste_filtres li
@@ -265,6 +307,7 @@ nav a:hover
     padding-right: 20px;
     align-items: center;
     vertical-align: top;
+    margin-top: 20px;
 }
 
 h1 /* Hébergements à Marseille*/
@@ -368,8 +411,10 @@ h1 /* Hébergements à Marseille*/
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 20px;
     margin-left: 20px;
-    min-width: 280px;
+    min-width: 290px;
+    min-height: 420px;
     align-items: center;
     align-content: center;
 }
@@ -594,6 +639,7 @@ footer ul
     font-size: 0.8em;
     padding-right: 200px;
     margin-left: 15px;
+    flex-wrap: nowrap;
 }
 
 footer li
@@ -601,4 +647,6 @@ footer li
     font-weight: normal;
     font-size: 0.8em;
     padding-top: 10px;
+    flex-wrap: nowrap;
+    min-width: 160px;
 }
