@@ -1,24 +1,24 @@
 @font-face
 {
     font-family: "Raleway";
-    src: url(/fonts/raleway/Raleway-Black.ttf);
-    src: url(/fonts/raleway/Raleway-BlackItalic.ttf);
-    src: url(/fonts/raleway/Raleway-Bold.ttf);
-    src: url(/fonts/raleway/Raleway-ExtraLight.ttf);
-    src: url(/fonts/raleway/Raleway-BoldItalic.ttf);
-    src: url(/fonts/raleway/Raleway-ExtraBold.ttf);
-    src: url(/fonts/raleway/Raleway-ExtraLightItalic.ttf);
-    src: url(/fonts/raleway/Raleway-Italic.ttf);
-    src: url(/fonts/raleway/Raleway-Medium.ttf);
-    src: url(/fonts/raleway/Raleway-ExtraBoldItalic.ttf);
-    src: url(/fonts/raleway/Raleway-Light.ttf);
-    src: url(/fonts/raleway/Raleway-LightItalic.ttf);
-    src: url(/fonts/raleway/Raleway-MediumItalic.ttf);
-    src: url(/fonts/raleway/Raleway-Regular.ttf);
-    src: url(/fonts/raleway/Raleway-SemiBold.ttf);
-    src: url(/fonts/raleway/Raleway-SemiBoldItalic.ttf);
-    src: url(/fonts/raleway/Raleway-Thin.ttf);
-    src: url(/fonts/raleway/Raleway-ThinItalic.ttf);
+    src: url(fonts/raleway/Raleway-Black.ttf);
+    src: url(fonts/raleway/Raleway-BlackItalic.ttf);
+    src: url(fonts/raleway/Raleway-Bold.ttf);
+    src: url(fonts/raleway/Raleway-ExtraLight.ttf);
+    src: url(fonts/raleway/Raleway-BoldItalic.ttf);
+    src: url(fonts/raleway/Raleway-ExtraBold.ttf);
+    src: url(fonts/raleway/Raleway-ExtraLightItalic.ttf);
+    src: url(fonts/raleway/Raleway-Italic.ttf);
+    src: url(fonts/raleway/Raleway-Medium.ttf);
+    src: url(fonts/raleway/Raleway-ExtraBoldItalic.ttf);
+    src: url(fonts/raleway/Raleway-Light.ttf);
+    src: url(fonts/raleway/Raleway-LightItalic.ttf);
+    src: url(fonts/raleway/Raleway-MediumItalic.ttf);
+    src: url(fonts/raleway/Raleway-Regular.ttf);
+    src: url(fonts/raleway/Raleway-SemiBold.ttf);
+    src: url(fonts/raleway/Raleway-SemiBoldItalic.ttf);
+    src: url(fonts/raleway/Raleway-Thin.ttf);
+    src: url(fonts/raleway/Raleway-ThinItalic.ttf);
 }
 
 header a /* 3 éléments du menu de navigation*/
@@ -122,14 +122,19 @@ nav a:hover
     min-width: 100px;
 }
 
+.rechercher:hover
+{
+    background-color: #deebff;
+    color: black;
+}
+
 #filtres /* Conteneur des 4 filtres*/
 {
     display: flex;
     width: 880px;
-    height: 30px;
+    min-height: 20px;
     max-width: 70%;
     align-items: center;
-    margin-top: 5px;
     flex-direction: row;
     justify-content: space-around;
 }
@@ -144,7 +149,7 @@ nav a:hover
 .liste_filtres /* Icones de filtres*/
 {
     list-style: none;
-    height: 30px;
+    min-height: 20px;
     width: 880px;
     display: flex;
     justify-content: space-around;
@@ -161,7 +166,7 @@ nav a:hover
 {
     position: relative;
     left: 10px;
-    background-color: #f2f2f2;
+    background-color: #deebff;
     width: 30px;
     height: 30px;
     border-radius: 20px 20px;
@@ -191,14 +196,19 @@ nav a:hover
     border-bottom-right-radius: 15px 15px;
     border: 2px solid #f2f2f2;
     align-items: center;
-    padding: auto;
     padding-left: 12px;
     width: 110%;
+    flex-wrap: wrap;
+}
+
+.filter:hover
+{
+    background-color: #deebff;
 }
 
 #result /* Conteneur "Plus de 500 logements trouvés" */
 {
-    width: 30%;
+    width: 100%;
     display: flex;
     align-items: center;
     align-content: space-around;
@@ -208,14 +218,13 @@ nav a:hover
 
 .bloc_info /* Conteneur icône Info */
 {
-    display: flex;
+    display: inline-flex;
     background-color: #ffffff;
     border: 1px solid #f2f2f2;
     border-radius: 8px 8px;
     width: 16px;
     height: 16px;
     margin-left: 5px;
-    flex-wrap: wrap;
 }
 
 .info /* icône Info*/
@@ -231,6 +240,8 @@ nav a:hover
 {
     font-size: 0.7em;
     margin-left: 10px;
+    display: inline-flex;
+    flex-wrap: wrap;
 }
 
 #section1
@@ -260,10 +271,11 @@ h1 /* Hébergements à Marseille*/
 {
     width: 100%;
     height: 10px;
-    padding-top: 10px;
+    margin-top: 20px;
     margin-left: 15px;
     font-size: 0.9em;
     font-weight: bold;
+    align-self: flex-start;
 }
 
 .vignette /* Vignette Hôtel*/
@@ -276,6 +288,11 @@ h1 /* Hébergements à Marseille*/
     margin-top: 15px;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.vignette:hover
+{
+    background-color: #deebff;
 }
 
 .vignette img 
@@ -328,10 +345,18 @@ h1 /* Hébergements à Marseille*/
 .plus
 {
     width: 100%;
-    font-size: 0.7em;
-    font-weight: bold;
-    margin-left: 15px;
     margin-top: 20px;
+}
+
+.afficher_plus
+{
+    min-width: 100px;
+    font-size: 0.8em;
+    font-weight: bold;
+    background-color: #f2f2f2;
+    margin-left: 15px;
+    border: none;
+    outline: none;
 }
 
 #populaires /* Section "Les Plus populaires*/
@@ -339,25 +364,33 @@ h1 /* Hébergements à Marseille*/
     background-color: #f2f2f2;
     width: 25%;
     border-radius: 10px 10px;
-    display: inline-flex;
+    display: inline-block;
     flex-wrap: nowrap;
-    flex-flow: column;
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
     margin-left: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
-    min-width: 260px;
+    min-width: 280px;
+    align-items: center;
+    align-content: center;
+}
+
+.icon_pop
+{
+    width: 20px;
+    height: 20px;
 }
 
 #populaires h2 /* Les plus populaires*/
 {
-    width: 100%;
-    height: 10px;
-    padding-top: 15px;
-    margin-left: 30px;
+    max-width: 330px;
+    height: 20px;
     font-size: 0.9em;
     font-weight: bold;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .vignette_pop /*Vignette Populaires */
@@ -365,11 +398,15 @@ h1 /* Hébergements à Marseille*/
     width: 275px;
     height: 102px;
     background-color: #ffffff;
-    padding: auto;
     border-radius: 10px 10px;
-    margin-bottom: 20px;
-    margin-top: 15px;
-    display: inline-block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vignette_pop:hover
+{
+    background-color: #deebff;
 }
 
 .pop /* Image Hôtel Populaire */
@@ -447,6 +484,11 @@ figure
     flex-wrap: wrap;
     box-shadow: 2px 4px 2px #dfdbdb;
     overflow: hidden;
+}
+
+figure:hover
+{
+    background-color: #deebff;
 }
 
 figure img
@@ -541,8 +583,8 @@ footer
     text-align: justify;
     align-items: baseline;
     margin-top: 20px;
-    height: 200px;
     background-color: #f2f2f2;
+    flex-wrap: wrap;
 }
 
 footer ul
@@ -551,10 +593,12 @@ footer ul
     font-weight: bold;
     font-size: 0.8em;
     padding-right: 200px;
+    margin-left: 15px;
 }
 
 footer li
 {
     font-weight: normal;
+    font-size: 0.8em;
     padding-top: 10px;
 }
