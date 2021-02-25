@@ -166,6 +166,22 @@ nav a:hover
         initial-value: none;
     }
 
+    #filtres /* Conteneur des 4 filtres*/
+    {
+        display: inline-flex;
+        max-height: 110px;
+        width: 100%;
+    }
+
+    #filtres h2
+    {
+        display: inline-flex;
+    }
+
+    .liste_filtres /* Icones de filtres*/
+    {
+        flex-direction: column;
+    }
 }
 
 #filtres /* Conteneur des 4 filtres*/
@@ -179,7 +195,7 @@ nav a:hover
     justify-content: space-around;
 }
 
-#filtres p
+#filtres h2
 {
     align-items: center;
     margin-left: 0px;
@@ -251,8 +267,8 @@ nav a:hover
 #result /* Conteneur "Plus de 500 logements trouvés" */
 {
     width: 100%;
-    display: flex;
-    align-items: center;
+    display: inline-flex;
+    align-items: baseline;
     align-content: space-around;
     flex-wrap: wrap;
     margin-top: 2px;
@@ -632,11 +648,15 @@ footer
     flex-wrap: wrap;
 }
 
+footer h2
+{
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
 footer ul
 {
     list-style-type: none;
-    font-weight: bold;
-    font-size: 0.8em;
     padding-right: 200px;
     margin-left: 15px;
     flex-wrap: nowrap;
