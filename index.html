@@ -23,67 +23,65 @@
             <li><a href="inscription.html" title="Inscrivez-vous !">S'inscrire</a></li>
           </ul>
         </nav>
-        <p class="slogan"><strong>Trouvez votre hébergement pour des vacances de rêve</strong></p>
+        <h1 class="slogan"><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
         <p>En plein centre ville ou en pleine nature</p><br />
       </header>
 
       <!-- Section 1 : champ de recherche-->
-      <section id="search">
-        <element id="searchbar">
-          <!-- Bloc géolocalisation-->
-          <div id="bloc_position">
-          <img src="icons/geolocalisation.svg" class="geolocalisation" alt="Votre destination"/>
-          </div>
-          <!-- Formulaire Ville-->
-          <form method="post" action="ville.php"></form>
-          <label for="Ville"></label>
-            <input type="search" id="Ville" name="Ville" placeholder="Marseille, France" class="ville" autofocus/>
-            <!-- Bouton rechercher-->
-            <input type="submit" value="Rechercher" class="rechercher"/>
-          <br />
-        </element>
+      <section id="searchbar" title="Recherche">
+        <!-- Bloc géolocalisation-->
+        <div id="bloc_position">
+        <img src="icons/geolocalisation.svg" class="geolocalisation" alt="Votre destination"/>
+        </div>
+        <!-- Formulaire Ville-->
+        <form method="post" action="ville.php"></form>
+        <label for="Ville"></label>
+          <input type="search" id="Ville" name="Ville" placeholder="Marseille, France" class="ville" autofocus/>
+          <!-- Bouton rechercher-->
+          <input type="submit" value="Rechercher" class="rechercher"/>
+      </section>
+      <br />
 
-        <!-- Element 2 : filtres de recherche-->
-        <element id="filtres">
+      <!-- Section 2 : filtres de recherche-->
+      <section id="filtres" title="Filtres">
 
-          <h2><strong>Filtres</strong></h2>
+        <h2><strong>Filtres</strong></h2>
 
-          <ul class="liste_filtres">
+        <ul class="liste_filtres">
 
-            <li class="economique">
-              <div class="icon"><img src="icons/eco.svg" alt="economique" class="icone"/></div>
-              <div><input type="submit" value="&Eacute;conomique" class="filter"/></div>
-            </li>
+          <li class="economique">
+            <div class="icon"><img src="icons/eco.svg" alt="economique" class="icone"/></div>
+            <div><input type="submit" value="&Eacute;conomique" class="filter"/></div>
+          </li>
 
-            <li class="family">
-              <div class="icon"><img src="icons/familial.svg" alt="family"/></div>
-              <div><input type="submit" value="Familial" class="filter"/></div>
-            </li>
+          <li class="family">
+            <div class="icon"><img src="icons/familial.svg" alt="family"/></div>
+            <div><input type="submit" value="Familial" class="filter"/></div>
+          </li>
 
-            <li class="romance">
-              <div class="icon"><img src="icons/heart.svg" alt="romantique"/></div>
-              <div><input type="submit" value="Romantique" class="filter"/></div>
-            </li>
+          <li class="romance">
+            <div class="icon"><img src="icons/heart.svg" alt="romantique"/></div>
+            <div><input type="submit" value="Romantique" class="filter"/></div>
+          </li>
 
-            <li class="animals">
-              <div class="icon"><img src="icons/dog.svg" alt="animals"/></div>
-              <div><input type="submit" value="Animaux autorisés" class="filter"/></div>
-            </li>
+          <li class="animals">
+            <div class="icon"><img src="icons/dog.svg" alt="animals"/></div>
+            <div><input type="submit" value="Animaux autorisés" class="filter"/></div>
+          </li>
 
-          </ul>
-        </element>
-        <br />
+        </ul>
+      </section>
+      <br />
       
 
-        <!-- Section 3 bis : Résultat de la recherche -->
-        <element id="result">
-          <p class="bloc_info">
-            <img src="icons/info.svg" class="info" alt="information"/>
-            Plus de 500 logements sont disponibles dans cette ville
-          </p>
-          <br />
-        </element>
-      </section>
+      <!-- Section 3 bis : Résultat de la recherche -->
+      <div id="result">
+        <p class="bloc_info">
+          <img src="icons/info.svg" class="info" alt="information"/>
+          Plus de 500 logements sont disponibles dans cette ville
+        </p>
+      </div>
+      <br />
       
 
 
@@ -92,7 +90,7 @@
       <section id="section1">
 
         <section id="hebergements">
-          <h1>Hébergements à Marseille</h1>
+          <h2>Hébergements à Marseille</h2>
           <div class="vignette">
             <a href="images/hebergements/1_xlarge/xl_hotel1.jpg" target="_blank"><img src="images/hebergements/4_small/hotel1.jpg" alt="Auberge de la Canebière"/></a>
             <p class="nom_hotel">Auberge de la Canebière</p>
