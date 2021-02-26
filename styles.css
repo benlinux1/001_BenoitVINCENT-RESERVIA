@@ -36,7 +36,7 @@ header a /* 3 éléments du menu de navigation*/
     flex-wrap: wrap;
 }
 
-.slogan
+h1
 {
     font-size: 1em;
     flex-wrap: wrap;
@@ -84,7 +84,7 @@ nav a:hover
 {
     display: flex;
     height: 30px;
-    width: 25%;
+    max-width: 360px;
 }
 
 #bloc_position /* Conteneur icône géolocalisation*/
@@ -101,7 +101,6 @@ nav a:hover
 .geolocalisation /* icône géolocalisation*/
 {
     max-width: 33%;
-    display: block;
 }
 
 .ville /* Champ de recherche Ville*/
@@ -126,7 +125,7 @@ nav a:hover
     border-top-right-radius: 6px 10px;
     border-bottom-right-radius: 6px 10px;
     border: none;
-    min-width: 100px;
+    min-width: 40px;
 }
 
 @media all and (orientation: portrait)
@@ -168,7 +167,7 @@ nav a:hover
 
     #filtres /* Conteneur des 4 filtres*/
     {
-        display: inline-flex;
+        display: flex;
         max-height: 110px;
         width: 100%;
     }
@@ -187,32 +186,31 @@ nav a:hover
 #filtres /* Conteneur des 4 filtres*/
 {
     display: flex;
-    width: 880px;
+    flex-direction: row;
+    width: 1000px;
     min-height: 20px;
     max-width: 70%;
     align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    align-content: space-around;
+    flex-wrap: nowrap;
 }
 
 #filtres h2
 {
     align-items: center;
-    margin-left: 0px;
     font-size: 0.8em;
+    justify-self: flex-start;
 }
 
 .liste_filtres /* Icones de filtres*/
 {
     list-style: none;
     min-height: 20px;
-    width: 880px;
+    width: 800px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-right: auto;
-    margin-left: auto;
+    padding-left: 20px;
 }
 
 .liste_filtres li
@@ -268,29 +266,33 @@ nav a:hover
 #result /* Conteneur "Plus de 500 logements trouvés" */
 {
     width: 100%;
-    display: inline-flex;
-    align-items: baseline;
-    align-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 2px;
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    margin-top: 5px;
 }
 
 .bloc_info /* Conteneur icône Info */
 {
-    display: inline-flex;
+    display: flex;
     background-color: #ffffff;
     border: 1px solid #f2f2f2;
     border-radius: 8px 8px;
     width: 16px;
     height: 16px;
     margin-left: 5px;
+    align-items: center;
+    justify-content: center;
 }
 
 .info /* icône Info*/
 {
     width: 10px;
     height:10px;
-    margin: auto;
+
     /* remplissage de l'icone svg avec filtre (CSS filter generator) */
     filter: invert(30%) sepia(54%) saturate(5456%) hue-rotate(208deg) brightness(96%) contrast(109%);
 }
@@ -299,8 +301,8 @@ nav a:hover
 {
     font-size: 0.7em;
     margin-left: 10px;
-    display: inline-flex;
     flex-wrap: wrap;
+    display: flex;
 }
 
 #section1
@@ -327,7 +329,7 @@ nav a:hover
     margin-top: 20px;
 }
 
-h1 /* Hébergements à Marseille*/
+#hebergements h2 /* Hébergements à Marseille*/
 {
     width: 100%;
     height: 10px;
@@ -666,8 +668,8 @@ footer ul
 footer li
 {
     font-weight: normal;
-    font-size: 0.8em;
-    padding-top: 10px;
+    font-size: 0.7em;
+    padding-bottom: 8px;
     flex-wrap: nowrap;
     min-width: 160px;
 }

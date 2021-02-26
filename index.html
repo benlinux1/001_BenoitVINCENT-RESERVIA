@@ -31,14 +31,14 @@
       <div id="searchbar" title="Recherche">
         <!-- Bloc géolocalisation-->
         <div id="bloc_position">
-        <img src="icons/geolocalisation.svg" class="geolocalisation" alt="Votre destination"/>
+          <img src="icons/geolocalisation.svg" class="geolocalisation" alt="Votre destination"/>
         </div>
         <!-- Formulaire Ville-->
         <form method="post" action="ville.php"></form>
         <label for="Ville"></label>
           <input type="search" id="Ville" name="Ville" placeholder="Marseille, France" class="ville" autofocus/>
-          <!-- Bouton rechercher-->
-          <input type="submit" value="Rechercher" class="rechercher"/>
+        <!-- Bouton rechercher-->
+        <input type="submit" value="Rechercher" class="rechercher"/>
       </div>
       <br />
 
@@ -71,17 +71,15 @@
 
         </ul>
       </section>
-      <br />
       
 
       <!-- Section 3 bis : Résultat de la recherche -->
       <div id="result">
-        <p class="bloc_info">
+        <div class="bloc_info">
           <img src="icons/info.svg" class="info" alt="information"/>
-          Plus de 500 logements sont disponibles dans cette ville
-        </p>
+        </div>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
       </div>
-      <br />
       
 
 
@@ -268,27 +266,26 @@
       <!-- Footer -->
       <footer>
         <!-- Footer A propos-->
-        <h2 class="about">A propos</h2>
-          <ul>
-            <li>Fonctionnement du site<a href="site.html"></a></li>
-            <li>Conditions générales de vente<a href="/CGV.html"></a></li>
-            <li>Données et confidentialité<a href="confidential.html"></a></li>
-          </ul> 	
+        <ul>
+          <h2 class="about">A propos</h2>
+          <li>Fonctionnement du site<a href="site.html"></a></li>
+          <li>Conditions générales de vente<a href="/CGV.html"></a></li>
+          <li>Données et confidentialité<a href="confidential.html"></a></li>
+        </ul> 	
 
         <!-- Footer : Nos hébergements-->
-          
-        <h2 class="quality">Nos hébergements</h2>
-          <ul>
-            <li>Charte qualité<a href="site.html"></a></li>
-            <li>Soumettre votre hôtel<a href="CGV.html"></a></li>
-          </ul>
+        <ul>
+          <h2 class="quality">Nos hébergements</h2>
+          <li>Charte qualité<a href="site.html"></a></li>
+          <li>Soumettre votre hôtel<a href="CGV.html"></a></li>
+        </ul>
 
         <!-- Footer : Assistance-->
-        <h2 class="contact">Assistance</h2>
-          <ul>
-            <li>Centre d'aide<a href=""></a></li>
-            <li>Nous contacter<a href=""></a></li>
-          </ul>
+        <ul>
+          <h2 class="contact">Assistance</h2>
+          <li>Centre d'aide<a href=""></a></li>
+          <li>Nous contacter<a href=""></a></li>
+        </ul>
 
       </footer>
     </div>
