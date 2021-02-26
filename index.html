@@ -28,59 +28,62 @@
       </header>
 
       <!-- Section 1 : champ de recherche-->
-      <section id="searchbar">
-        <!-- Bloc géolocalisation-->
-        <div id="bloc_position">
-        <img src="icons/geolocalisation.svg" class="geolocalisation" alt="Votre destination"/>
-        </div>
-        <!-- Formulaire Ville-->
-        <form method="post" action="ville.php"></form>
-        <label for="Ville"></label>
-          <input type="search" id="Ville" name="Ville" placeholder="Marseille, France" class="ville" autofocus/>
-          <!-- Bouton rechercher-->
-          <input type="submit" value="Rechercher" class="rechercher"/>
-      </section>
-      <br />
+      <section id="search">
+        <element id="searchbar">
+          <!-- Bloc géolocalisation-->
+          <div id="bloc_position">
+          <img src="icons/geolocalisation.svg" class="geolocalisation" alt="Votre destination"/>
+          </div>
+          <!-- Formulaire Ville-->
+          <form method="post" action="ville.php"></form>
+          <label for="Ville"></label>
+            <input type="search" id="Ville" name="Ville" placeholder="Marseille, France" class="ville" autofocus/>
+            <!-- Bouton rechercher-->
+            <input type="submit" value="Rechercher" class="rechercher"/>
+          <br />
+        </element>
 
-      <!-- Section 2 : filtres de recherche-->
-      <section id="filtres">
+        <!-- Element 2 : filtres de recherche-->
+        <element id="filtres">
 
-        <h2><strong>Filtres</strong></h2>
+          <h2><strong>Filtres</strong></h2>
 
-        <ul class="liste_filtres">
+          <ul class="liste_filtres">
 
-          <li class="economique">
-            <div class="icon"><img src="icons/eco.svg" alt="economique" class="icone"/></div>
-            <div><input type="submit" value="&Eacute;conomique" class="filter"/></div>
-          </li>
+            <li class="economique">
+              <div class="icon"><img src="icons/eco.svg" alt="economique" class="icone"/></div>
+              <div><input type="submit" value="&Eacute;conomique" class="filter"/></div>
+            </li>
 
-          <li class="family">
-            <div class="icon"><img src="icons/familial.svg" alt="family"/></div>
-            <div><input type="submit" value="Familial" class="filter"/></div>
-          </li>
+            <li class="family">
+              <div class="icon"><img src="icons/familial.svg" alt="family"/></div>
+              <div><input type="submit" value="Familial" class="filter"/></div>
+            </li>
 
-          <li class="romance">
-            <div class="icon"><img src="icons/heart.svg" alt="romantique"/></div>
-            <div><input type="submit" value="Romantique" class="filter"/></div>
-          </li>
+            <li class="romance">
+              <div class="icon"><img src="icons/heart.svg" alt="romantique"/></div>
+              <div><input type="submit" value="Romantique" class="filter"/></div>
+            </li>
 
-          <li class="animals">
-            <div class="icon"><img src="icons/dog.svg" alt="animals"/></div>
-            <div><input type="submit" value="Animaux autorisés" class="filter"/></div>
-          </li>
+            <li class="animals">
+              <div class="icon"><img src="icons/dog.svg" alt="animals"/></div>
+              <div><input type="submit" value="Animaux autorisés" class="filter"/></div>
+            </li>
 
-        </ul>
+          </ul>
+        </element>
         <br />
-      </section>
+      
 
-      <!-- Section 3 bis : Résultat de la recherche -->
-      <element id="result">
-        <div class="bloc_info">
-          <img src="icons/info.svg" class="info" alt="information"/>
-        </div>
-        <p>Plus de 500 logements sont disponibles dans cette ville</p>
-      </element>
-      <br />
+        <!-- Section 3 bis : Résultat de la recherche -->
+        <element id="result">
+          <p class="bloc_info">
+            <img src="icons/info.svg" class="info" alt="information"/>
+            Plus de 500 logements sont disponibles dans cette ville
+          </p>
+          <br />
+        </element>
+      </section>
       
 
 
