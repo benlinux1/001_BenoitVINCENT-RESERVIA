@@ -21,6 +21,12 @@
     src: url(fonts/raleway/Raleway-ThinItalic.ttf);
 }
 
+body
+{
+    max-width: 1320px;
+    margin: auto;
+}
+
 #bloc_page
 {
     margin-left: 10px;
@@ -134,129 +140,6 @@ h1 + p
     border-bottom-right-radius: 6px 10px;
     border: none;
     min-width: 40px;
-}
-
-@media all and (orientation: portrait)
-{
-
-    #bloc_page
-    {
-        margin: auto;
-    }
-
-    #searchbar
-
-    {
-        margin: auto;
-    }
-
-    .rechercher
-    {
-        font-size: 0px;
-        background-image: url(icons/search-solid.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 10px;
-        display: inline-flex;
-        flex-wrap: wrap;
-        width: 20px;
-    }
-
-    header
-    {
-        min-width: 50px;
-    }
-
-    .menu
-    {
-        display: flex;
-        flex-wrap: wrap;
-        min-width: 220px;
-    }
-
-    nav ul
-    {
-        flex-wrap: wrap;
-    }
-
-    #section1
-    {
-        display: flex;
-        flex-direction: column;
-        flex-direction: column-reverse;
-        justify-content: space-around;
-        width: 470px;
-        margin: auto;
-    }
-
-
-    #hebergements
-    {
-        min-width: 320px;
-        margin: auto;
-        width: 90%;
-    }
-
-    #populaires
-    {
-        min-width: 320px;
-        margin: auto;
-        width: 90%;
-    }
-
-    #activites
-    {
-        min-width: 320px;
-        margin: auto;
-        width: 90%; 
-    }
-
-    #filtres /* Conteneur des 4 filtres*/
-    {
-        display: inline-block;
-        max-height: 110px;
-        width: 100%;
-    }
-
-}
-
-@media all and (max-width: 768px)
-{
-    .rechercher
-    {
-        font-size: 0px;
-        background-image: url(icons/search-solid.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        width: 20px;
-    }
-
-    #filtres /* Conteneur des 4 filtres*/
-    {
-        display: inline-block;
-        max-height: 110px;
-        width: 100%;
-    }
-
-    #filtres h2
-    {
-        width: 100%;
-        margin-left: 0px;
-    }
-
-    .liste_filtres /* Icones de filtres*/
-    {
-        flex-direction: column;
-    }
-
-    #populaires
-    {
-        width: 80%;
-        margin: auto;
-    }
 }
 
 #filtres /* Conteneur des 4 filtres*/
@@ -383,25 +266,24 @@ h1 + p
 
 #section1
 {
-    justify-content: flex-start;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    justify-content: space-around;
 }
 
 #hebergements /* Section Hébergements*/
 {
     background-color: #f2f2f2;
-    min-width: 380px;
-    max-width: 70%;
+    min-width: 310px;
+    max-width: 880px;
     border-radius: 10px 10px;
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     align-content: flex-start;
     align-items: center;
-    vertical-align: top;
     margin-top: 20px;
 }
 
@@ -422,7 +304,6 @@ h1 + p
     height: 180px;
     background-color: #ffffff;
     border-radius: 10px;
-    padding: auto;
     margin-top: 15px;
     margin-left: 10px;
     margin-right: 10px;
@@ -437,8 +318,6 @@ h1 + p
 {
     width: 234px;
     max-height: 120px;
-    padding-left: 3px;
-    padding-right: 3px;
     padding-top: 3px;
     border-radius: 10px 10px;
 }
@@ -462,9 +341,13 @@ h1 + p
 
 .rating
 {
-    display: inline-flex;
-    padding-left: 8px;
-    max-width: 15px;
+    margin-left: 6px;
+}
+
+.rating img
+{
+    max-width: 8px;
+    margin-left: 4px;
 }
 
 .etoile_bleu
@@ -500,23 +383,22 @@ h1 + p
 #populaires /* Section "Les Plus populaires*/
 {
     background-color: #f2f2f2;
-    max-width: 30%;
     border-radius: 10px 10px;
-    display: inline-block;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
     margin-top: 20px;
-    min-width: 380px;
-    min-height: 420px;
-    align-items: center;
-    align-content: center;
+    min-width: 360px;
+    margin-left: 20px;
 }
 
 .icon_pop
 {
     width: 20px;
     height: 20px;
+    position: relative;
+    right: 0px;
 }
 
 #populaires h2 /* Les plus populaires*/
@@ -538,9 +420,10 @@ h1 + p
     height: 102px;
     background-color: #ffffff;
     border-radius: 10px 10px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
 }
 
 .vignette_pop:hover
@@ -579,13 +462,13 @@ h1 + p
     display: inline-flex;
     flex-flow: row;
     margin-top: 10px;
-    margin-left: 3px;
+    margin-left: 6px;
 }
 
 .contenu_vignette_populaire .rating img
 {
     height: 8px;
-    padding-right: 4px;
+    padding-right: 2px;
 }
 
 #activites
@@ -724,6 +607,7 @@ footer
     margin-top: 20px;
     background-color: #f2f2f2;
     flex-wrap: wrap;
+    border-radius: 10px 10px;
 }
 
 footer h2
@@ -747,4 +631,252 @@ footer li
     padding-bottom: 8px;
     flex-wrap: nowrap;
     min-width: 160px;
+}
+
+@media all and (max-width: 480px)
+{
+
+    #bloc_page
+    {
+        margin: auto;
+    }
+
+    h1 
+    {
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    h1 + p
+    {
+        text-align: center;
+    }
+
+    #searchbar
+
+    {
+        margin: auto;
+        justify-content: center;
+    }
+
+    .rechercher
+    {
+        font-size: 0px;
+        background-image: url(icons/search-solid.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 10px;
+        display: inline-flex;
+        flex-wrap: wrap;
+        width: 20px;
+    }
+
+    header
+    {
+        min-width: 50px;
+    }
+
+    nav
+    {
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 220px;
+    }
+
+    #filtres /* Conteneur des 4 filtres*/
+    {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        max-width: 90%;
+
+    }
+
+    .liste_filtres /* Icones de filtres*/
+    {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #filtres h2
+    {
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    #populaires
+    {
+        order: 1;
+        z-index: 2;
+    }
+
+    #hebergements
+    {
+        order: 2;
+        z-index: 1;
+    }
+
+
+    #hebergements
+    {
+        min-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        width: 90%;
+    }
+
+    .vignette /*vignettes hébergements*/
+    {
+        width: 80%;
+        max-height: 150px;
+    }
+
+    .vignette img
+    {
+        width: 98%;
+        max-height: 90px;
+    }
+
+    #populaires
+    {
+        min-width: 310px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .vignette_pop /*Vignette Populaires */
+    {
+        margin-bottom: 10px;
+        width: 80%;
+        min-width: 280px;
+
+    }
+
+    .rating
+    {
+        height: 5px;
+    }
+
+    #activites
+    {
+        min-width: 320px;
+        width: 100%;
+        justify-content: space-around;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    figure 
+    {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        max-height: 110px;
+    }
+
+    .vieux_port img
+    {
+        height: 80px;
+    }
+
+    .fort_pomegues
+    {
+        height: 110px;
+    }
+
+    .fort_pomegues img
+    {
+        max-height: 80px;
+    }
+
+    .iles_frioul
+    {
+        height: 110px;
+    }
+
+    .iles_frioul img
+    {
+        max-height: 80px;
+    }
+
+    .calanques img
+    {
+        height: 80px;
+    }
+
+    .notre_dame
+    {
+        height: 110px;
+    }
+
+    .notre_dame img
+    {
+        max-height: 80px;
+    }
+
+    .parc_longchamp img
+    {
+        max-height: 80px;
+    }
+
+    footer li
+    {
+        min-width: 200px;
+    }
+}
+
+@media all and (max-width: 768px)
+{
+
+    #bloc_page
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+
+    .rechercher
+    {
+        font-size: 0px;
+        background-image: url(icons/search-solid.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 20px;
+    }
+
+    #section1
+    {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    #herbergements
+
+    {
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+
+    #populaires
+    {
+        margin-left: 0;
+    }
+
+    figure 
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
