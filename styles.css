@@ -146,7 +146,6 @@ h1 + p
 {
     display: flex;
     flex-direction: row;
-    width: 1000px;
     min-height: 20px;
     max-width: 70%;
     align-items: center;
@@ -165,7 +164,7 @@ h1 + p
 {
     list-style: none;
     min-height: 20px;
-    width: 800px;
+    max-width: 800px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -224,7 +223,7 @@ h1 + p
 
 #result /* Conteneur "Plus de 500 logements trouvés" */
 {
-    width: 100%;
+    max-width: 100%;
     min-height: 20px;
     display: flex;
     align-items: center;
@@ -289,7 +288,7 @@ h1 + p
 
 #hebergements h2 /* Hébergements à Marseille*/
 {
-    width: 100%;
+    min-width: 90%;
     height: 10px;
     margin-top: 20px;
     margin-left: 15px;
@@ -365,7 +364,7 @@ h1 + p
 
 .plus
 {
-    width: 100%;
+    min-width: 90%;
     margin-top: 20px;
 }
 
@@ -487,7 +486,7 @@ h1 + p
 
 #activites h2 /* Activités à Marseille*/
 {
-    width: 100%;
+    min-width: 90%;
     height: 10px;
     padding-top: 15px;
     margin-left: 30px;
@@ -724,7 +723,6 @@ footer li
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
-        width: 90%;
     }
 
     .vignette /*vignettes hébergements*/
@@ -742,10 +740,7 @@ footer li
     #populaires
     {
         min-width: 310px;
-        margin-left: auto;
-        margin-right: auto;
         margin-top: 20px;
-        width: 90%;
         margin-left: 0;
     }
 
@@ -765,7 +760,6 @@ footer li
     #activites
     {
         min-width: 320px;
-        width: 100%;
         justify-content: space-around;
         margin-left: auto;
         margin-right: auto;
