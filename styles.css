@@ -417,8 +417,7 @@ h1 + p
 
 .vignette_pop /*Vignette Populaires */
 {
-    width: 275px;
-    height: 102px;
+    min-width: 280px;
     background-color: #ffffff;
     border-radius: 10px 10px;
     margin-top: 10px;
@@ -444,7 +443,6 @@ h1 + p
 .pop /* Image Hôtel Populaire */
 {
     margin-top: 3px;
-    margin-bottom: 3px;
     margin-left: 3px;
     width: 96px;
     height: 96px;
@@ -464,7 +462,6 @@ h1 + p
 .contenu_vignette_populaire
 {
     display: inline-block;
-    height: 96px;
     color: black;
 }
 
@@ -499,16 +496,19 @@ h1 + p
 {
     width: 100%;
     height: 10px;
-    padding-top: 15px;
     margin-left: 30px;
     font-size: 0.9em;
     font-weight: bold;
 }
 
+#activites a
+{
+    max-width: 250px;
+}
+
 figure
 {
     width: 250px;
-    min-width: 250px;
     background-color: #ffffff;
     border-radius: 10px 10px;
     display: inline-block;
@@ -525,7 +525,6 @@ figure:hover
 figure img
 {
     width: 100%;
-    height: 100%;
     object-fit: cover;
     border-top-left-radius: 10px 10px;
     border-top-right-radius: 10px 10px;
@@ -537,7 +536,7 @@ figcaption
     font-weight: bold;
     margin-left: 15px;
     height: 25px;
-    min-width: 250px;
+    width: 250px;
     padding-top: 5px;
     text-decoration: none;
     color: black;
@@ -650,26 +649,26 @@ footer li
 
 @media all and (max-width: 480px)
 {
-    h1 
+    h1 /* Smartphone */
     {
         text-align: center;
         margin-left: 10px;
         margin-right: 10px;
     }
 
-    h1 + p
+    h1 + p /* Smartphone */
     {
         text-align: center;
     }
 
-    #searchbar
+    #searchbar /* Smartphone */
 
     {
         margin: auto;
         justify-content: center;
     }
 
-    .rechercher
+    .rechercher /* Smartphone */
     {
         font-size: 0px;
         background-image: url(icons/search-solid.svg);
@@ -681,12 +680,12 @@ footer li
         width: 20px;
     }
 
-    header
+    header /* Smartphone */
     {
         min-width: 50px;
     }
 
-    nav
+    nav /* Smartphone */
     {
         display: flex;
         flex-wrap: wrap;
@@ -705,25 +704,26 @@ footer li
         flex-direction: row;
     }
 
-    #filtres h2
+    #filtres h2 /* Smartphone */
     {
         min-width: 90%;
         margin-left: 20px;
     }
 
-    #result
+    #result /* Smartphone */
     {
         justify-content: center;
     }
 
-    #section1
+    #section1 /* Smartphone */
     {
         display: inline-block;
+        min-width: 360px;
     }
 
-    #hebergements
+    #hebergements /* Smartphone */
     {
-        min-width: 320px;
+        min-width: 360px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
@@ -737,13 +737,13 @@ footer li
         max-height: 150px;
     }
 
-    .vignette img
+    .vignette img /* Smartphone */
     {
         width: 98%;
         max-height: 90px;
     }
 
-    #populaires
+    #populaires /* Smartphone */
     {
         min-width: 310px;
         margin-left: auto;
@@ -758,24 +758,28 @@ footer li
         margin-bottom: 10px;
         width: 80%;
         min-width: 280px;
-
+        max-height: 102px;
     }
 
-    .rating
+    .rating /* Smartphone */
     {
         height: 5px;
     }
 
-    #activites
+    #activites /* Smartphone */
     {
         min-width: 320px;
-        justify-content: space-around;
-        margin-left: auto;
-        margin-right: auto;
-        flex-direction: column;
+        display: inline-block;
+        margin: auto;
     }
 
-    figure 
+    #activites a 
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    figure /* Smartphone */
     {
         margin-left: auto;
         margin-right: auto;
@@ -783,52 +787,52 @@ footer li
         max-height: 110px;
     }
 
-    .vieux_port img
+    .vieux_port img /* Smartphone */
     {
         height: 80px;
     }
 
-    .fort_pomegues
+    .fort_pomegues /* Smartphone */
     {
         height: 110px;
     }
 
-    .fort_pomegues img
+    .fort_pomegues img /* Smartphone */
     {
         max-height: 80px;
     }
 
-    .iles_frioul
+    .iles_frioul /* Smartphone */
     {
         height: 110px;
     }
 
-    .iles_frioul img
+    .iles_frioul img /* Smartphone */
     {
         max-height: 80px;
     }
 
-    .calanques img
+    .calanques img /* Smartphone */
     {
         height: 80px;
     }
 
-    .notre_dame
+    .notre_dame /* Smartphone */
     {
         height: 110px;
     }
 
-    .notre_dame img
+    .notre_dame img /* Smartphone */
     {
         max-height: 80px;
     }
 
-    .parc_longchamp img
+    .parc_longchamp img /* Smartphone */
     {
         max-height: 80px;
     }
 
-    footer li
+    footer li /* Smartphone */
     {
         min-width: 200px;
     }
@@ -862,6 +866,7 @@ footer li
         justify-content: space-around;
         padding-right: 10px;
         padding-left: 10px;
+        min-width: 360px;
     }
 
     #herbergements
@@ -869,6 +874,7 @@ footer li
     {
         margin-right: auto;
         margin-left: auto;
+        min-width: 360px;
 
     }
 
@@ -876,53 +882,49 @@ footer li
     {
         margin-right: auto;
         margin-left: auto;
+        min-width: 360px;
     }
 
     #activites
     {
-        margin-left: auto;
-        margin-right: auto; 
+        margin: auto;
+        min-width: 360px;
     }
 
     figure 
     {
         margin-left: auto;
         margin-right: auto;
+        min-width: 360px;
     }
 }
 
 @media all and (orientation: portrait)
 {
-    body
-    {
-        max-width: 480px;
-    }
 
-    #bloc_page
+    #bloc_page /*portrait*/
     {
         margin: auto;
     }
 
-    h1 
-    {
-        text-align: center;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    h1 + p
+    h1 /*portrait*/
     {
         text-align: center;
     }
 
-    #searchbar
+    h1 + p /*portrait*/
+    {
+        text-align: center;
+    }
+
+    #searchbar /*portrait*/
 
     {
         margin: auto;
         justify-content: center;
     }
 
-    .rechercher
+    .rechercher /*portrait*/
     {
         font-size: 0px;
         background-image: url(icons/search-solid.svg);
@@ -934,12 +936,12 @@ footer li
         width: 20px;
     }
 
-    header
+    header /*portrait*/
     {
         min-width: 50px;
     }
 
-    nav
+    nav /*portrait*/
     {
         display: flex;
         flex-wrap: wrap;
@@ -957,28 +959,27 @@ footer li
     .liste_filtres /* Icones de filtres*/
     {
         flex-direction: row;
-        width: 100%;
     }
 
-    #filtres h2
+    #filtres h2 /*portrait*/
     {
         min-width: 90%;
         margin-left: 20px;
     }
 
-    #result
+    #result /*portrait*/
     {
         justify-content: center;
     }
 
-    #section1
+    #section1 /*portrait*/
     {
         flex-direction: column;
+        min-width: 360px;
     }
 
-    #hebergements
+    #hebergements /*portrait*/
     {
-        min-width: 320px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
@@ -986,25 +987,25 @@ footer li
         z-index: 1;
         display: inline-block;
         justify-content: space-around;
+        min-width: 360px;
     }
 
     .vignette /*vignettes hébergements*/
     {
-        width: 80%;
         max-height: 150px;
         margin: auto;
         margin-top: 20px;
     }
 
-    .vignette img
+    .vignette img /*portrait*/
     {
         width: 98%;
         max-height: 90px;
     }
 
-    #populaires
+    #populaires /*portrait*/
     {
-        min-width: 310px;
+        min-width: 360px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
@@ -1015,31 +1016,48 @@ footer li
     .vignette_pop /*Vignette Populaires */
     {
         margin-bottom: 10px;
-        width: 80%;
-        min-width: 280px;
+        min-width: 320px;
 
     }
 
-    .rating
+    .contenu_vignette_populaire /*portrait*/
+    {
+        max-height: 90px;
+    }
+
+    .rating /*portrait*/
     {
         height: 5px;
     }
 
-    #activites
+    #activites /*portrait*/
     {
-        min-width: 320px;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-        flex-direction: column;
+        min-width: 360px;
+        display: inline-block;
+        flex-wrap: nowrap;
+    }
+
+    #activites a
+    {
+        margin: 0 auto;
+        display: block;
+    }
+
+    #activites div
+    {
+        display: block;
+    }
+
+    #activites h2
+    {
+        margin-left: 20px;
     }
 
     figure 
     {
-        margin-left: auto;
-        margin-right: auto;
         margin-top: 10px;
         max-height: 110px;
+        min-width: 360px;
     }
 
     .vieux_port img
