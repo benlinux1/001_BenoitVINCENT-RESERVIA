@@ -436,7 +436,6 @@ h1 + p
 {
     width: 100%;
     height: 100%;
-    display: block;
     text-decoration: none;
 }
 
@@ -481,20 +480,21 @@ h1 + p
 
 #activites
 {
-    display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: min-content;
+    grid-gap: 15px;
     justify-content: space-around;
-    align-content: flex-start;
+    flex-wrap: wrap;
     border-radius: 10px 10px;
     margin-left: 0px;
     margin-top: 20px;
     min-width: 340px;
+    align-content: top;
 }
 
-#activites h2 /* Activités à Marseille*/
+.activites_h2 /* Activités à Marseille*/
 {
-    width: 100%;
     height: 10px;
     margin-left: 30px;
     font-size: 0.9em;
@@ -511,7 +511,6 @@ figure
     width: 250px;
     background-color: #ffffff;
     border-radius: 10px 10px;
-    display: inline-block;
     margin-left: 0px;
     flex-wrap: wrap;
     box-shadow: 2px 4px 2px #dfdbdb;
@@ -542,6 +541,12 @@ figcaption
     color: black;
 }
 
+.vieux_port
+{
+    grid-column: 1;
+    grid-row: 1 / 2;
+}
+
 .vieux_port img
 {
     height: 275px;
@@ -550,6 +555,7 @@ figcaption
 .fort_pomegues
 {
     height: 160px;
+    grid-column: 2; grid-row: 1;
 }
 
 .fort_pomegues img
@@ -560,11 +566,19 @@ figcaption
 .iles_frioul
 {
     height: 115px;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: flex-end;
 }
 
 .iles_frioul img
 {
     max-height: 85px;
+}
+
+.calanques
+{
+    grid-column: 3; grid-row: 1 / 2; 
 }
 
 .calanques img
@@ -575,6 +589,8 @@ figcaption
 .notre_dame
 {
     height: 135px;
+    grid-column: 4;
+    grid-row: 1 / 2; 
 }
 
 .notre_dame img
@@ -586,25 +602,14 @@ figcaption
 .parc_longchamp
 {
     height: 140px;
+    grid-column: 4;
+    grid-row: 1;
+    align-self: flex-end;
 }
 
 .parc_longchamp img
 {
     max-height: 110px;
-}
-
-.groupe1
-{
-    height: 100%;
-    display: inline-flex;
-    flex-flow: column wrap;
-}
-
-.groupe2
-{
-    height: 100%;
-    display: inline-flex;
-    flex-flow: column wrap;
 }
 
 footer
@@ -729,7 +734,7 @@ footer li
         margin-top: 20px;
         order: 2;
         z-index: 1;
-        display: inline-block;
+        display: block;
     }
 
     .vignette /*vignettes hébergements*/
@@ -768,15 +773,23 @@ footer li
 
     #activites /* Smartphone */
     {
-        min-width: 320px;
-        display: inline-block;
-        margin: auto;
+        min-width: 360px;
+        display: block;
+        flex-wrap: nowrap;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
     }
 
     #activites a 
     {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #activites h2
+    {
+        width: 360px;
     }
 
     figure /* Smartphone */
@@ -832,6 +845,11 @@ footer li
         max-height: 80px;
     }
 
+    footer 
+    {
+        max-width: 480px;
+    }
+
     footer li /* Smartphone */
     {
         min-width: 200px;
@@ -840,13 +858,6 @@ footer li
 
 @media all and (max-width: 768px)
 {
-
-    #bloc_page
-    {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
     .rechercher
     {
         font-size: 0px;
@@ -887,7 +898,15 @@ footer li
 
     #activites
     {
-        margin: auto;
+        margin-right: auto;
+        margin-left: auto;
+        min-width: 360px;
+    }
+
+    #activites a
+    {
+        margin-right: auto;
+        margin-left: auto;
         min-width: 360px;
     }
 
@@ -901,12 +920,6 @@ footer li
 
 @media all and (orientation: portrait)
 {
-
-    #bloc_page /*portrait*/
-    {
-        margin: auto;
-    }
-
     h1 /*portrait*/
     {
         text-align: center;
@@ -974,8 +987,8 @@ footer li
 
     #section1 /*portrait*/
     {
-        flex-direction: column;
         min-width: 360px;
+        column-gap: 15px;
     }
 
     #hebergements /*portrait*/
@@ -985,7 +998,7 @@ footer li
         margin-top: 20px;
         order: 2;
         z-index: 1;
-        display: inline-block;
+        display: flex;
         justify-content: space-around;
         min-width: 360px;
     }
@@ -1033,14 +1046,18 @@ footer li
     #activites /*portrait*/
     {
         min-width: 360px;
-        display: inline-block;
-        flex-wrap: nowrap;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
     }
 
     #activites a
     {
         margin: 0 auto;
         display: block;
+        min-width: 360px;
     }
 
     #activites div
@@ -1051,6 +1068,9 @@ footer li
     #activites h2
     {
         margin-left: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
 
     figure 
