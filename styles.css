@@ -486,10 +486,8 @@ h1 + p
     justify-content: space-around;
     flex-wrap: wrap;
     border-radius: 10px 10px;
-    margin-left: 0px;
     margin-top: 20px;
     min-width: 340px;
-    align-content: top;
 }
 
 .activites_h2 /* Activités à Marseille*/
@@ -555,7 +553,6 @@ figcaption
 
 .fort_pomegues
 {
-    height: 160px;
     grid-column: 2; grid-row: 1;
 }
 
@@ -721,21 +718,21 @@ footer li
         margin-right: auto;
         margin-left: auto;
         min-width: 360px;
-        display: inline-flex;
+        display: flex;
     }
 
     #activites a
     {
         margin-right: auto;
         margin-left: auto;
-        min-width: 360px;
+        min-width: 280px;
+        max-height: 110px;
     }
 
     figure /* Smartphone */
     {
         margin-left: auto;
         margin-right: auto;
-        margin-top: 10px;
         max-height: 110px;
     }
 
@@ -744,19 +741,9 @@ footer li
         height: 80px;
     }
 
-    .fort_pomegues /* Smartphone */
-    {
-        height: 110px;
-    }
-
     .fort_pomegues img /* Smartphone */
     {
         max-height: 80px;
-    }
-
-    .iles_frioul /* Smartphone */
-    {
-        height: 110px;
     }
 
     .iles_frioul img /* Smartphone */
@@ -767,11 +754,6 @@ footer li
     .calanques img /* Smartphone */
     {
         height: 80px;
-    }
-
-    .notre_dame /* Smartphone */
-    {
-        height: 110px;
     }
 
     .notre_dame img /* Smartphone */
@@ -906,14 +888,24 @@ footer li
     #activites /* Smartphone */ /* Smartphone */
     {
         min-width: 360px;
-        display: block;
-        flex-wrap: nowrap;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 0 auto;
+        margin-right: 0 auto;
         margin-top: 20px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: flex-start;
+
     }
 
     #activites a /* Smartphone */
+    {
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+        max-height: 110px;
+        margin-top: 0px;
+    }
+
+    figure 
     {
         margin-left: auto;
         margin-right: auto;
