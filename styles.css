@@ -32,12 +32,6 @@ header
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
-    min-height: 50px;
-}
-
-nav
-{
-    min-width: 25%;
 }
 
 nav ul
@@ -126,7 +120,6 @@ h1 + p
 {
     display: block;
     background-color: #0065fc;
-    width: 40%;
     font-size: 0.8em;
     color: #ffffff;
     border-top-right-radius: 6px 10px;
@@ -140,7 +133,6 @@ h1 + p
     display: flex;
     flex-direction: row;
     min-height: 20px;
-    max-width: 80%;
     align-items: center;
     align-content: space-around;
     flex-wrap: nowrap;
@@ -215,8 +207,6 @@ h1 + p
 
 #result /* Conteneur "Plus de 500 logements trouvés" */
 {
-    min-width: 90%;
-    min-height: 20px;
     display: flex;
     align-items: center;
     align-content: center;
@@ -261,27 +251,30 @@ h1 + p
     flex-wrap: nowrap;
     flex-direction: row-reverse;
     justify-content: space-around;
+    column-gap: 15px;
 }
 
 #hebergements /* Section Hébergements*/
 {
     background-color: #f2f2f2;
+    border-radius: 10px 10px;
+    margin-top: 20px;
+}
+
+.hebergements /* Groupe de vignettes Hébergements*/
+{
     min-width: 310px;
     max-width: 880px;
-    border-radius: 10px 10px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     align-content: flex-start;
     align-items: center;
-    margin-top: 20px;
 }
 
 #hebergements h2 /* Hébergements à Marseille*/
 {
-    display: block;
-    width: 100%;
     height: 10px;
     margin-top: 20px;
     margin-left: 20px;
@@ -303,7 +296,6 @@ h1 + p
 
 .vignette a /*Fonctionnalité cliquable*/
 {
-    display: block;
     text-decoration: none;
     color: black;
 }
@@ -366,9 +358,7 @@ h1 + p
 
 .plus
 {
-    width: 100%;
     margin-top: 20px;
-    display: block;
 }
 
 .afficher_plus
@@ -380,19 +370,23 @@ h1 + p
     margin-left: 15px;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
-#populaires /* Section "Les Plus populaires*/
+#populaires
 {
     background-color: #f2f2f2;
     border-radius: 10px 10px;
+    margin-top: 20px;
+}
+
+.boxpopulaires /* Section "Les Plus populaires*/
+{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: 20px;
     min-width: 360px;
-    margin-left: 20px;
 }
 
 .icon_pop
@@ -434,8 +428,6 @@ h1 + p
 
 .vignette_pop a /*Fonctionnalité cliquable*/
 {
-    width: 100%;
-    height: 100%;
     text-decoration: none;
 }
 
@@ -647,8 +639,45 @@ footer li
     flex-wrap: nowrap;
 }
 
-@media all and (max-width: 1080px)
+@media screen and (min-device-width: 701px) and (max-device-width: 1080px)
 {
+    #section1
+    {
+        display: inline-block;
+    }
+
+    #populaires
+    {
+        align-items: center;
+        align-content: space-around;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #populaires h2
+    {
+        width: 95%;
+    }
+
+    .boxpopulaires
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #hebergements
+    {
+        padding-bottom: 5px;
+    }
+
+    .hebergements
+    {
+        max-width: none;
+        column-gap: 30px;
+    }
+    
     #activites
     {
         display: grid;
@@ -674,101 +703,14 @@ footer li
     }
 }
 
-@media all and (max-width: 768px)
+@media screen and (max-device-width: 701px)
 {
-    .rechercher
+    body
     {
-        font-size: 0px;
-        background-image: url(icons/search-solid.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        width: 20px;
+        max-width: 701px;
+        margin: auto;
     }
-
-    #section1
-    {
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        padding-right: 10px;
-        padding-left: 10px;
-        min-width: 360px;
-    }
-
-    #herbergements
-
-    {
-        margin-right: auto;
-        margin-left: auto;
-        min-width: 360px;
-    }
-
-    #populaires
-    {
-        margin-right: auto;
-        margin-left: auto;
-        min-width: 360px;
-    }
-
-    #activites
-    {
-        margin-right: auto;
-        margin-left: auto;
-        min-width: 360px;
-        display: flex;
-    }
-
-    #activites a
-    {
-        margin-right: auto;
-        margin-left: auto;
-        min-width: 280px;
-        max-height: 110px;
-    }
-
-    figure /* Smartphone */
-    {
-        margin-left: auto;
-        margin-right: auto;
-        max-height: 110px;
-    }
-
-    .vieux_port img /* Smartphone */
-    {
-        height: 80px;
-    }
-
-    .fort_pomegues img /* Smartphone */
-    {
-        max-height: 80px;
-    }
-
-    .iles_frioul img /* Smartphone */
-    {
-        max-height: 80px;
-    }
-
-    .calanques img /* Smartphone */
-    {
-        height: 80px;
-    }
-
-    .notre_dame img /* Smartphone */
-    {
-        max-height: 80px;
-    }
-
-    .parc_longchamp img /* Smartphone */
-    {
-        max-height: 80px;
-    }
-}
-
-@media all and (max-width: 480px) /* Smartphone */
-{
+    
     h1 /* Smartphone */
     {
         text-align: center;
@@ -788,35 +730,22 @@ footer li
         justify-content: center;
     }
 
-    .rechercher /* Smartphone */
+    .rechercher
     {
         font-size: 0px;
         background-image: url(icons/search-solid.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 10px;
-        display: inline-flex;
-        flex-wrap: wrap;
-        width: 20px;
-    }
-
-    header /* Smartphone */
-    {
-        min-width: 50px;
-    }
-
-    nav /* Smartphone */
-    {
         display: flex;
         flex-wrap: wrap;
+        width: 20px;
     }
 
     #filtres /* Conteneur des 4 filtres*/ /* Smartphone */
     {
         display: flex;
         flex-direction: column;
-        max-width: 90%;
-
     }
 
     .liste_filtres /* Icones de filtres*/ /* Smartphone */
@@ -835,49 +764,34 @@ footer li
         justify-content: center;
     }
 
-    #section1 /* Smartphone */
+    #section1
     {
-        display: inline-block;
-        min-width: 360px;
+        display: initial;
+        max-width: 690px;
     }
 
-    #hebergements /* Smartphone */
+    #populaires
     {
-        min-width: 360px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        order: 2;
-        z-index: 1;
+        max-width: 690px;
     }
 
-    .vignette /*vignettes hébergements*/ /* Smartphone */
+    .boxpopulaires
     {
-        max-height: 150px;
-    }
-
-    .vignette img /* Smartphone */
-    {
-        width: 98%;
-        max-height: 90px;
-    }
-
-    #populaires /* Smartphone */
-    {
-        min-width: 310px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        order: 1;
-        z-index: 2;
+        display: flex;
+        flex-direction: column;
     }
 
     .vignette_pop /*Vignette Populaires */ /* Smartphone */
     {
         margin-bottom: 10px;
-        width: 80%;
-        min-width: 280px;
+        min-width: 360px;
         max-height: 102px;
+    }
+
+    #populaires h2
+    {
+        display: inline-flex;
+        width: 95%;
     }
 
     .rating /* Smartphone */ /* Smartphone */
@@ -885,29 +799,63 @@ footer li
         height: 5px;
     }
 
+    #hebergements
+    {
+        max-width: 690px;
+    }
+
+    .hebergements
+    {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: space-around;
+        align-items: center;
+    }
+
+    #hebergements h2
+    {
+        padding-top: 20px;
+    }
+
+    .plus
+    {
+        padding-bottom: 20px;
+    }
+
+    .vignette
+    {
+        min-width: 360px;
+        margin-top: 20px;
+    }
+
+    .vignette a > img 
+    {
+        min-width: 354px;
+    }
+
     #activites /* Smartphone */ /* Smartphone */
     {
         min-width: 360px;
-        margin-left: 0 auto;
-        margin-right: 0 auto;
         margin-top: 20px;
-        display: inline-flex;
-        justify-content: center;
-        align-items: flex-start;
-
+        display: flex;
     }
 
     #activites a /* Smartphone */
     {
-        margin-left: 0 auto;
-        margin-right: 0 auto;
-        max-height: 110px;
-        margin-top: 0px;
+        height: 110px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
-    figure 
+    figure img 
     {
-        margin-left: auto;
-        margin-right: auto;
+        height: 85px;
+    }
+
+    .vieux_port img, .calanques img
+    {
+        height: 85px;
     }
 }
