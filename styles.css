@@ -21,11 +21,6 @@
     src: url(fonts/raleway/Raleway-ThinItalic.ttf);
 }
 
-body
-{
-    max-width: 1320px;
-}
-
 header
 {
     display: flex;
@@ -284,7 +279,7 @@ h1 + p
 
 .vignette /* Vignette Hôtel*/
 {
-    width: 240px;
+    min-width: 240px;
     height: 180px;
     background-color: #ffffff;
     border-radius: 10px;
@@ -298,6 +293,7 @@ h1 + p
 {
     text-decoration: none;
     color: black;
+    display: block;
 }
 
 .vignette:hover
@@ -310,7 +306,8 @@ h1 + p
     width: 234px;
     max-height: 120px;
     padding-top: 3px;
-    padding-left: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
     border-radius: 10px 10px;
 }
 
@@ -429,6 +426,9 @@ h1 + p
 .vignette_pop a /*Fonctionnalité cliquable*/
 {
     text-decoration: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .pop /* Image Hôtel Populaire */
@@ -470,7 +470,7 @@ h1 + p
     padding-right: 2px;
 }
 
-#activites
+.container
 {
     display: grid;
     grid-template-columns: repeat(4, 250px);
@@ -493,8 +493,8 @@ h1 + p
 
 #activites a
 {
-    max-width: 250px;
     text-decoration: none;
+    display: block;
 }
 
 figure
@@ -639,7 +639,7 @@ footer li
     flex-wrap: nowrap;
 }
 
-@media screen and (min-device-width: 701px) and (max-device-width: 1080px)
+@media screen and (min-device-width: 770px) and (max-device-width: 1080px) /*Ecrans taille moyenne*/
 {
     #section1
     {
@@ -659,7 +659,7 @@ footer li
         width: 95%;
     }
 
-    .boxpopulaires
+    .boxpopulaires /*Ecrans taille moyenne*/
     {
         display: flex;
         flex-direction: row;
@@ -678,7 +678,7 @@ footer li
         column-gap: 30px;
     }
     
-    #activites
+    .container /*Ecrans taille moyenne*/
     {
         display: grid;
         grid-template-columns: repeat(3, 250px);
@@ -703,34 +703,33 @@ footer li
     }
 }
 
-@media screen and (max-device-width: 701px)
+@media screen and (max-device-width: 769px) /* Tablettes */
 {
-    body
+    #bloc_page
     {
-        max-width: 701px;
-        margin: auto;
+        margin-left: 0 auto;
+        margin-right: 0 auto;
     }
     
-    h1 /* Smartphone */
+    h1 /* Tablettes */
     {
         text-align: center;
-        margin-left: 10px;
-        margin-right: 10px;
+
     }
 
-    h1 + p /* Smartphone */
+    h1 + p
     {
         text-align: center;
     }
 
-    #searchbar /* Smartphone */
+    #searchbar
 
     {
         margin: auto;
         justify-content: center;
     }
 
-    .rechercher
+    .rechercher /* Tablettes */
     {
         font-size: 0px;
         background-image: url(icons/search-solid.svg);
@@ -742,29 +741,12 @@ footer li
         width: 20px;
     }
 
-    #filtres /* Conteneur des 4 filtres*/ /* Smartphone */
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .liste_filtres /* Icones de filtres*/ /* Smartphone */
-    {
-        flex-direction: row;
-    }
-
-    #filtres h2 /* Smartphone */ /* Smartphone */
-    {
-        min-width: 90%;
-        margin-left: 20px;
-    }
-
-    #result /* Smartphone */
+    #result
     {
         justify-content: center;
     }
 
-    #section1
+    #section1 /* Tablettes */
     {
         display: initial;
         max-width: 690px;
@@ -773,35 +755,42 @@ footer li
     #populaires
     {
         max-width: 690px;
+        justify-content: space-evenly;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .boxpopulaires
     {
         display: flex;
         flex-direction: column;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .vignette_pop /*Vignette Populaires */ /* Smartphone */
+    .vignette_pop /*Vignette Populaires */ /* Tablettes */
     {
         margin-bottom: 10px;
-        min-width: 360px;
         max-height: 102px;
     }
 
     #populaires h2
     {
         display: inline-flex;
-        width: 95%;
+        width: 90%;
     }
 
-    .rating /* Smartphone */ /* Smartphone */
+    .rating
     {
         height: 5px;
     }
 
-    #hebergements
+    #hebergements /* Tablettes */
     {
         max-width: 690px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .hebergements
@@ -812,9 +801,13 @@ footer li
         justify-content: space-around;
         align-content: space-around;
         align-items: center;
+        width: 90%;
+        min-width: 260px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    #hebergements h2
+    #hebergements h2 /* Tablettes */
     {
         padding-top: 20px;
     }
@@ -826,30 +819,40 @@ footer li
 
     .vignette
     {
-        min-width: 360px;
         margin-top: 20px;
+        max-width: 360px;
     }
 
     .vignette a > img 
     {
         min-width: 354px;
+        object-fit: cover;
     }
 
-    #activites /* Smartphone */ /* Smartphone */
+    .container /* Tablettes */
     {
         min-width: 360px;
         margin-top: 20px;
         display: flex;
+        flex-flow: row wrap;
+        align-content: center;
     }
 
-    #activites a /* Smartphone */
+    #activites a
     {
         height: 110px;
         margin-top: 10px;
         margin-bottom: 10px;
     }
 
-    figure img 
+    figure 
+    {
+        min-width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    figure img /* Tablettes */
     {
         height: 85px;
     }
@@ -857,5 +860,66 @@ footer li
     .vieux_port img, .calanques img
     {
         height: 85px;
+    }
+}
+
+@media screen and (max-device-width: 480px) /* Smartphones */
+{
+    .inscription
+    {
+        float: right;
+    }
+    
+    
+    
+    #filtres /* Conteneur des 4 filtres*/
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .liste_filtres /* Icones de filtres*/
+    {
+        justify-content: flex-start;
+        margin-left: 0px;
+        padding-left: 0px;
+        max-width: 325px;
+        min-width: 0px;
+    }
+
+    #filtres li 
+    {
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+
+    #filtres h2 /* Smartphone */ /* Smartphones */
+    {
+        min-width: 90%;
+        margin-left: 20px;
+    }
+
+    .vignette a > img 
+    {
+        min-width: 240px;
+    }
+
+    .boxpopulaires /* Smartphones */
+    {
+        min-width: 0px;
+        max-width: none;
+        padding-bottom: 20px;
+    }
+    
+    #activites
+    {
+        justify-content: center;
+    }
+
+    .container
+    {
+        min-width: 0px;
+        margin-top: 0px;
     }
 }
