@@ -322,6 +322,7 @@ h1 + p
 .vignette:hover
 {
     background-color: #deebff;
+    transform: scale(1.04);
 }
 
 .vignette img 
@@ -444,6 +445,7 @@ h1 + p
 .vignette_pop:hover
 {
     background-color: #deebff;
+    transform: scale(1.04);
 }
 
 .vignette_pop a /*Fonctionnalité cliquable*/
@@ -533,6 +535,7 @@ figure
 figure:hover
 {
     background-color: #deebff;
+    transform: scale(1.04);
 }
 
 figure img
