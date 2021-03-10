@@ -1,14 +1,23 @@
 @font-face
 {
-    font-family: 'ralewaybold';
-    src: url(fonts/raleway/raleway-bold-webfont.woff) format('woff'),
-         url(fonts/raleway/raleway-bold-webfont.woff2) format('woff2'),
-         url(fonts/raleway/Raleway-Bold.ttf) format('ttf');
-
     font-family: 'ralewaymedium';
-    src: url(fonts/raleway/raleway-medium-webfont.woff) format('woff'),
-         url(fonts/raleway/raleway-medium-webfont.woff2) format('woff2'),
-         url(fonts/raleway/Raleway-Medium.ttf) format('ttf');
+    src: url(fonts/raleway/raleway-medium-webfont.woff) format("woff"),
+         url(fonts/raleway/raleway-medium-webfont.woff2) format("woff2"),
+         url(fonts/raleway/Raleway-Medium.ttf) format("truetype");
+}
+
+@font-face
+{
+    font-family: 'ralewaybold';
+    src: url(fonts/raleway/raleway-bold-webfont.woff) format("woff"),
+         url(fonts/raleway/raleway-bold-webfont.woff2) format("woff2"),
+         url(fonts/raleway/Raleway-Bold.ttf) format("truetype");
+}
+
+#bloc_page
+{
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 header
@@ -125,7 +134,7 @@ h1 + p
     border-left: none;
     border-right: none;
     font-size: 0.8em;
-    font-family: 'ralewaymedium';
+    font-family: 'ralewaybold';
     min-width: 180px;
 }
 
@@ -134,7 +143,7 @@ h1 + p
     display: block;
     background-color: #0065fc;
     font-size: 0.7em;
-    font-family: 'ralewaymedium';
+    font-family: 'ralewaybold';
     color: #ffffff;
     border-top-right-radius: 6px 10px;
     border-bottom-right-radius: 6px 10px;
@@ -156,7 +165,7 @@ h1 + p
 {
     align-items: center;
     font-size: 0.8em;
-    font-family: 'ralewaybold';
+    font-family: "ralewaybold";
     justify-self: flex-start;
 }
 
@@ -205,7 +214,7 @@ h1 + p
     border-left: none;
     background-color: #ffffff;
     font-size: 0.8em;
-    font-family: 'ralewaybold';
+    font-family: "ralewaybold";
     height: 30px;
     border-top-right-radius: 15px 15px;
     border-bottom-right-radius: 15px 15px;
@@ -280,7 +289,7 @@ h1 + p
 .hebergements /* Groupe de vignettes Hébergements*/
 {
     min-width: 310px;
-    max-width: 880px;
+    max-width: 1020px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -553,7 +562,6 @@ figcaption
 {
     font-size: 0.8em;
     font-family: 'ralewaybold';
-    font-weight: bold;
     margin-left: 15px;
     height: 25px;
     width: 250px;
