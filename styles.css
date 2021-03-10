@@ -891,7 +891,7 @@ footer li
     .container /* Tablettes */
     {
         min-width: 360px;
-        margin-top: 20px;
+        margin-top: 0px;
         display: flex;
         flex-flow: row wrap;
         align-content: center;
@@ -900,8 +900,8 @@ footer li
     #activites a
     {
         height: 110px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 0px;
+        margin-bottom: 20px;
     }
 
     figure 
@@ -988,6 +988,7 @@ footer li
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        max-width: 325px;
     }
 
     .liste_filtres /* Icones de filtres*/
@@ -1009,11 +1010,12 @@ footer li
     {
         min-width: 90%;
         margin-left: 20px;
+        padding-left: 10px;
     }
 
     .vignette a > img 
     {
-        min-width: 240px;
+        min-width: 280px;
     }
 
     .boxpopulaires /* Smartphones */
@@ -1022,15 +1024,38 @@ footer li
         max-width: none;
         padding-bottom: 20px;
     }
+
+    #hebergements
+    {
+        background-color: transparent;
+    }
+
+    .afficher_plus
+    {
+        background-color: transparent;
+        text-align: left;
+        margin-left: 0px;
+    }
     
     #activites
     {
         justify-content: center;
     }
 
+    #activites a
+    {
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+
     .container
     {
         min-width: 0px;
         margin-top: 0px;
+    }
+
+    #activites h2
+    {
+        margin-left: 10px;
     }
 }
