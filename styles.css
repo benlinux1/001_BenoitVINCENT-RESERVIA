@@ -859,7 +859,6 @@ footer li
         flex-direction: column;
         justify-content: space-around;
         align-content: space-around;
-        align-items: center;
         width: 90%;
         min-width: 260px;
         margin-left: auto;
@@ -926,8 +925,8 @@ footer li
 {
     #bloc_page
     {
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
 
@@ -956,7 +955,6 @@ footer li
 
     nav ul 
     {
-        margin-top: 0px;
         padding-left: 0px;
     }
 
@@ -976,11 +974,17 @@ footer li
         display: block;
         text-align: center;
         width: 100%;
+        height: 100%;
+        color: black;
+        font-family: "ralewaymedium";
     }
 
     nav a:hover
     {
         border-top: 2px solid transparent;
+        color: #0065fc;
+        font-family: "ralewaybold";
+        
     }
 
     #filtres /* Conteneur des 4 filtres*/
@@ -994,6 +998,7 @@ footer li
     .liste_filtres /* Icones de filtres*/
     {
         justify-content: flex-start;
+        margin-top: 0px;
         margin-left: 0px;
         padding-left: 0px;
         max-width: 325px;
@@ -1040,12 +1045,13 @@ footer li
     #activites
     {
         justify-content: center;
+        margin-top: 0px;
     }
 
     #activites a
     {
         margin-bottom: 10px;
-        margin-top: 0px;
+        margin-top: 5px;
     }
 
     .container
