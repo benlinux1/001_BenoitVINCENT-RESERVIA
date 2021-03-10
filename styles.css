@@ -242,7 +242,6 @@ h1 + p
     align-content: center;
     justify-content: flex-start;
     flex-wrap: nowrap;
-    margin-top: 5px;
 }
 
 .bloc_info /* Conteneur icône Info */
@@ -814,7 +813,6 @@ footer li
     #populaires
     {
         max-width: 690px;
-        justify-content: space-evenly;
         margin-left: auto;
         margin-right: auto;
     }
@@ -826,6 +824,7 @@ footer li
         max-width: 90%;
         margin-left: auto;
         margin-right: auto;
+        padding-bottom: 20px;
     }
 
     .vignette_pop /*Vignette Populaires */ /* Tablettes */
@@ -1018,6 +1017,12 @@ footer li
         padding-left: 10px;
     }
 
+    .bloc_info 
+    {
+        margin-left: 0px;
+    }
+
+
     .vignette a > img 
     {
         min-width: 280px;
@@ -1039,12 +1044,20 @@ footer li
     {
         background-color: transparent;
         text-align: left;
-        margin-left: 0px;
+        margin-left: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     
     #activites
     {
         justify-content: center;
+        margin-top: 0px;
+    }
+
+    #activites h2
+    {
+        margin-left: 20px;
         margin-top: 0px;
     }
 
@@ -1058,10 +1071,5 @@ footer li
     {
         min-width: 0px;
         margin-top: 0px;
-    }
-
-    #activites h2
-    {
-        margin-left: 10px;
     }
 }
