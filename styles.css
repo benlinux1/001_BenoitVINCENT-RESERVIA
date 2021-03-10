@@ -166,6 +166,7 @@ h1 + p
     align-items: center;
     font-size: 0.8em;
     font-family: "ralewaybold";
+    font-weight: 300;
     justify-self: flex-start;
 }
 
@@ -184,6 +185,11 @@ h1 + p
 {
     /* Permet d'aligner l'icône et le texte du filtre */
     display: inline-flex;
+}
+
+.liste_filtres li:hover
+{
+    transform: scale(1.07);
 }
 
 .icon /* Conteneur des icônes de filtres*/
@@ -745,7 +751,7 @@ footer li
 
     .parc_longchamp
     {
-        height: 140px;
+        height: 135px;
         grid-column: 2;
         grid-row: 2; 
     }
@@ -957,7 +963,7 @@ footer li
 
     nav li:hover
     {
-        border-bottom: 3px solid #0065fc;
+        border-bottom: 2px solid #0065fc;
     }
 
     nav a
