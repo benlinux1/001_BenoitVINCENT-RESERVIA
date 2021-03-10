@@ -976,6 +976,7 @@ footer li
         height: 100%;
         color: black;
         font-family: "ralewaymedium";
+        font-weight: 700;
     }
 
     nav a:hover
@@ -1002,6 +1003,11 @@ footer li
         padding-left: 0px;
         max-width: 325px;
         min-width: 0px;
+    }
+
+    .liste_filtres ul 
+    {
+        margin-top: 0px;
     }
 
     #filtres li 
@@ -1044,7 +1050,7 @@ footer li
     {
         background-color: transparent;
         text-align: left;
-        margin-left: 10px;
+        margin-left: 20px;
         padding-left: 0px;
         padding-right: 0px;
     }
