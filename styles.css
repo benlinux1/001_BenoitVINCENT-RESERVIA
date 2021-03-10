@@ -720,7 +720,7 @@ footer li
         padding-bottom: 5px;
     }
 
-    #hebergements h2
+    #hebergements h2/* Mid Screens */
     {
         padding: 20px 0 0 5px
     }
@@ -740,7 +740,7 @@ footer li
         justify-content: space-around;
     }
 
-    .notre_dame
+    .notre_dame /* Mid Screens */
     {
         height: 140px;
         grid-column: 1;
@@ -929,7 +929,7 @@ footer li
     }
 
 
-    .menu
+    .menu /* Smartphone */
     {
         width: 100%;
         display: flex;
@@ -952,7 +952,7 @@ footer li
         width: 100%;
     }
 
-    nav ul 
+    nav ul /* Smartphone */
     {
         padding-left: 0px;
     }
@@ -968,7 +968,7 @@ footer li
         border-bottom: 2px solid #0065fc;
     }
 
-    nav a
+    nav a /* Smartphone */
     {
         display: block;
         text-align: center;
@@ -987,7 +987,7 @@ footer li
         
     }
 
-    #filtres /* Conteneur des 4 filtres*/
+    #filtres /* Conteneur des 4 filtres*/ /* Smartphone */
     {
         display: flex;
         flex-direction: column;
@@ -1005,7 +1005,7 @@ footer li
         min-width: 0px;
     }
 
-    .liste_filtres ul 
+    .liste_filtres ul /* Smartphone */
     {
         margin-top: 0px;
     }
@@ -1016,14 +1016,14 @@ footer li
         margin-left: 20px;
     }
 
-    #filtres h2 /* Smartphone */ /* Smartphones */
+    #filtres h2 
     {
         min-width: 90%;
         margin-left: 20px;
         padding-left: 10px;
     }
 
-    .bloc_info 
+    .bloc_info /* Smartphone */
     {
         margin-left: 0px;
     }
@@ -1034,14 +1034,14 @@ footer li
         min-width: 280px;
     }
 
-    .boxpopulaires /* Smartphones */
+    .boxpopulaires
     {
         min-width: 0px;
         max-width: none;
         padding-bottom: 20px;
     }
 
-    #hebergements
+    #hebergements /* Smartphone */
     {
         background-color: transparent;
     }
@@ -1061,7 +1061,7 @@ footer li
         margin-top: 0px;
     }
 
-    #activites h2
+    #activites h2 /* Smartphones */
     {
         margin-left: 20px;
         margin-top: 0px;
