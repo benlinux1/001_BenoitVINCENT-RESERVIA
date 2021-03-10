@@ -743,7 +743,7 @@ footer li
 
     .notre_dame
     {
-        height: 135px;
+        height: 140px;
         grid-column: 1;
         grid-row: 2; 
     }
@@ -751,9 +751,14 @@ footer li
 
     .parc_longchamp
     {
-        height: 135px;
+        height: 140px;
         grid-column: 2;
         grid-row: 2; 
+    }
+
+    .parc_longchamp img
+    {
+        max-height: 105px;
     }
 }
 
