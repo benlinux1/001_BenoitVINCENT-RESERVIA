@@ -687,7 +687,7 @@ footer li
     flex-wrap: nowrap;
 }
 
-@media screen and (min-device-width: 770px) and (max-device-width: 1080px) /*Ecrans taille moyenne*/
+@media screen and (min-width: 770px) and (max-width: 1080px) /*Ecrans taille moyenne*/
 {
     #section1
     {
@@ -761,7 +761,7 @@ footer li
     }
 }
 
-@media screen and (max-device-width: 769px) /* Tablettes */
+@media screen and (max-width: 769px) /* Tablettes */
 {
     #bloc_page
     {
@@ -920,7 +920,7 @@ footer li
     }
 }
 
-@media screen and (max-device-width: 480px) /* Smartphones */
+@media screen and (max-width: 480px) /* Smartphones */
 {
     #bloc_page
     {
