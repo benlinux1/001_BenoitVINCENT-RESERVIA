@@ -39,11 +39,12 @@
           <img src="icons/geolocalisation.svg" class="geolocalisation" alt="Votre destination"/>
         </div>
         <!-- Formulaire Ville-->
-        <form method="post" action="ville.php"></form>
-        <label for="Ville"></label>
+        <form method="post" id="city" action="ville.php">
+          <label for="Ville"></label>
           <input type="search" id="Ville" name="Ville" placeholder="Marseille, France" class="ville" autofocus/>
+        </form>
         <!-- Bouton rechercher-->
-        <button type="submit" value="Rechercher" class="rechercher">Rechercher</button>
+        <button type="submit" form="city" value="Rechercher" class="rechercher">Rechercher</button>
       </div>
       <br />
 

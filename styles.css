@@ -106,7 +106,6 @@ h1 + p
 {
     display: flex;
     height: 30px;
-    max-width: 360px;
 }
 
 #bloc_position /* Conteneur icône géolocalisation*/
@@ -117,7 +116,7 @@ h1 + p
     border-bottom-left-radius: 6px 10px;
     justify-content: center;
     width: 30px;
-    min-width: 30px;
+    height: 30px;
 }
 
 .geolocalisation /* icône géolocalisation*/
@@ -136,6 +135,7 @@ h1 + p
     font-size: 0.8em;
     font-family: 'ralewaybold';
     min-width: 180px;
+    height: 30px;
 }
 
 .rechercher /* Bouton Rechercher*/
@@ -149,6 +149,7 @@ h1 + p
     border-bottom-right-radius: 6px 10px;
     border: none;
     min-width: 40px;
+    height: 30px;
 }
 
 #filtres /* Conteneur des 4 filtres*/
@@ -210,7 +211,6 @@ h1 + p
 {
     max-width: 45%;
     margin: auto;
-    padding: auto;
     /* remplissage des icones svg avec filtre (CSS filter generator) */
     filter: invert(30%) sepia(54%) saturate(5456%) hue-rotate(208deg) brightness(96%) contrast(109%);
 }
@@ -226,7 +226,8 @@ h1 + p
     border-bottom-right-radius: 15px 15px;
     border: 2px solid #f2f2f2;
     align-items: center;
-    padding-left: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
     flex-wrap: wrap;
 }
 
@@ -765,8 +766,8 @@ footer li
 {
     #bloc_page
     {
-        margin-left: 0 auto;
-        margin-right: 0 auto;
+        margin-left: 5px;
+        margin-right: 5px;
     }
     
     h1 /* Tablettes */
@@ -783,7 +784,9 @@ footer li
     #searchbar
 
     {
-        margin: auto;
+        min-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
         justify-content: center;
     }
 
@@ -797,6 +800,11 @@ footer li
         display: flex;
         flex-wrap: wrap;
         width: 20px;
+    }
+
+    #filtres
+    {
+        justify-content: center;
     }
 
     #result
@@ -820,8 +828,8 @@ footer li
     .boxpopulaires
     {
         display: flex;
-        flex-direction: column;
-        max-width: 90%;
+        flex-direction: row;
+        min-width: 90%;
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 20px;
@@ -831,6 +839,7 @@ footer li
     {
         margin-bottom: 10px;
         max-height: 102px;
+        width: 250px;
     }
 
     #populaires h2
