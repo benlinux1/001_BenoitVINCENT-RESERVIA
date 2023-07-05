@@ -17,7 +17,7 @@ L'objectif visait à intégrer la maquette d'un site de planification de vacance
 L'application devait uniquement être disponible en **Français**.
 
 
-## Éléments fournis par l'entreprise .
+## Éléments fournis par l'entreprise
 
 - La maquette présentant les résolutions ordinateur et téléphone nous est communiquée par le client.
 - Toutes les images à intégrer au site sont fournies par le client au format SM, MD, L & XL.
@@ -47,9 +47,13 @@ L'application devait uniquement être disponible en **Français**.
 
 <img width="730" alt="Reservia 1" src="https://github.com/benlinux1/BenoitVINCENT_2_21012021/assets/78255467/a745c066-0f28-434c-9632-8e3e13440dd5">
 
+
+
 **Version tablette**
 
 <img width="439" alt="Reservia 2" src="https://github.com/benlinux1/BenoitVINCENT_2_21012021/assets/78255467/327d53fc-e88c-4c88-bab1-6fe8e40049b7">
+
+
 
 **Version smartphone**
 
