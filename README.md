@@ -43,19 +43,19 @@ L'application devait uniquement être disponible en **Français**.
 
 ## Captures d'écran
 
-**Version ordinateur**
+**Version ordinateur**  
 
 <img width="730" alt="Reservia 1" src="https://github.com/benlinux1/BenoitVINCENT_2_21012021/assets/78255467/a745c066-0f28-434c-9632-8e3e13440dd5">
+  
+  
 
-
-
-**Version tablette**
+**Version tablette**  
 
 <img width="439" alt="Reservia 2" src="https://github.com/benlinux1/BenoitVINCENT_2_21012021/assets/78255467/327d53fc-e88c-4c88-bab1-6fe8e40049b7">
+  
+  
 
-
-
-**Version smartphone**
+**Version smartphone**  
 
 <img width="189" alt="Reservia 3" src="https://github.com/benlinux1/BenoitVINCENT_2_21012021/assets/78255467/28c1f1a4-4132-42ab-ad2d-b2125ea0db60">
 
