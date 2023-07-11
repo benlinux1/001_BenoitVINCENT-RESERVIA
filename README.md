@@ -1,4 +1,5 @@
-https://forthebadge.com/generator/?plabel=Benoit+VINCENT&ptext=%23000000&slabel=Reservia&sbg=%23EA4560&stext=%23FFFFFF
+![web-dev-html-5- -css-3](https://github.com/benlinux1/001_BenoitVINCENT-RESERVIA/assets/78255467/9b1a72a9-f410-42b7-93c1-4a591a103f55)![benoit-vincent-reservia](https://github.com/benlinux1/001_BenoitVINCENT-RESERVIA/assets/78255467/1f8d44bc-8d8b-4055-9cf5-75f4797d3fd3)
+
 # RESERVIA
 Ce dépôt contient un site web pour le P2 du parcours **DEVELOPPEUR WEB**, intitulé **Reservia**.
 
